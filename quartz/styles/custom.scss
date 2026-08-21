@@ -120,3 +120,63 @@ body {
 body[data-slug="index"] .article-title {
   display: none !important;
 }
+/* ========================================
+   ЧАЙ ОПІВНОЧІ — LIGHT THEME
+   ======================================== */
+
+:root[saved-theme="light"] body {
+  background:
+    linear-gradient(
+      rgba(255, 250, 245, 0.22),
+      rgba(255, 250, 245, 0.42)
+    ),
+    url("/books-wiki/static/chai-opivnochi-light.png") center center / cover fixed no-repeat !important;
+
+  color: #4f403d;
+}
+
+:root[saved-theme="light"] #quartz-root,
+:root[saved-theme="light"] .page,
+:root[saved-theme="light"] #quartz-body {
+  background: transparent !important;
+}
+
+:root[saved-theme="light"] .center {
+  background: rgba(255, 248, 244, 0.52) !important;
+  border-radius: 22px;
+  padding: 28px;
+  backdrop-filter: blur(3px);
+}
+
+:root[saved-theme="light"] .left.sidebar,
+:root[saved-theme="light"] .right.sidebar {
+  background: rgba(255, 250, 247, 0.78) !important;
+  border: 1px solid rgba(166, 99, 69, 0.16);
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(90, 60, 50, 0.10);
+  backdrop-filter: blur(10px);
+}
+
+:root[saved-theme="light"] h1,
+:root[saved-theme="light"] h2,
+:root[saved-theme="light"] h3 {
+  color: #8f5f57;
+}
+
+:root[saved-theme="light"] a {
+  color: #a66345;
+}
+
+:root[saved-theme="light"] a:hover {
+  color: #7f4b38;
+}
+
+:root[saved-theme="light"] .graph {
+  background: rgba(255, 250, 247, 0.62) !important;
+  border: 1px solid rgba(166, 99, 69, 0.14);
+}
+
+:root[saved-theme="light"] .search-button,
+:root[saved-theme="light"] .search-bar {
+  background: rgba(255, 255, 255, 0.58) !important;
+}
