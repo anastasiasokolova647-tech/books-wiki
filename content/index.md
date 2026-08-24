@@ -10,11 +10,11 @@
 
 
 
-\---
+---
 
 
 
-\*\*Якщо будь-яка сторінка сайту заглючила або працює некоректно — звертайтесь до Анастасії:\*\*  
+**Якщо будь-яка сторінка сайту заглючила або працює некоректно — звертайтесь до Анастасії:**  
 
-\[breeze-bookstore@ukr.net](mailto:breeze-bookstore@ukr.net)
+[breeze-bookstore@ukr.net](mailto:breeze-bookstore@ukr.net)
 
