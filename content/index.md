@@ -18,3 +18,7 @@
 
 [breeze-bookstore@ukr.net](mailto:breeze-bookstore@ukr.net)
 
+
+*Посилання відкриє поштову програму, встановлену на вашому пристрої (наприклад, Microsoft Outlook).*
+
+
