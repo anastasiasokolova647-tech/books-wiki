@@ -1,0 +1,10 @@
+﻿{
+  "name": "Аптечка+",
+  "short_name": "Аптечка+",
+  "start_url": "/books-wiki/",
+  "scope": "/books-wiki/",
+  "display": "standalone",
+  "background_color": "#161618",
+  "theme_color": "#161618",
+  "description": "Аптечка+ — простір підтримки, книг і внутрішніх маршрутів."
+}
