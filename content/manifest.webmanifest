@@ -1,12 +1,12 @@
 ﻿{
-  "name": "Аптечка+",
-  "short_name": "Аптечка+",
+  "name": "Чай опівночі",
+  "short_name": "Чай опівночі",
   "start_url": "/books-wiki/",
   "scope": "/books-wiki/",
   "display": "standalone",
   "background_color": "#161618",
   "theme_color": "#161618",
-  "description": "Аптечка+ — простір підтримки, книг і внутрішніх маршрутів.",
+  "description": "Чай опівночі",
   "icons": [
     {
       "src": "/books-wiki/icon-192.png",
@@ -20,3 +20,4 @@
     }
   ]
 }
+
