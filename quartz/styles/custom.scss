@@ -180,3 +180,10 @@ body[data-slug="index"] .article-title {
 :root[saved-theme="light"] .search-bar {
   background: rgba(255, 255, 255, 0.58) !important;
 }
+/* Graph: не вилазити за праву панель */
+.graph {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}

@@ -20,7 +20,7 @@ export default (() => {
     const description =
       fileData.frontmatter?.socialDescription ??
       fileData.frontmatter?.description ??
-      unescapeHTML(fileData.description?.trim() ?? "Чай опівночі — книги, історії й карта внутрішніх станів. Місце, де хочеться залишитись.")
+      unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
     const { css, js, additionalHead } = externalResources
 
@@ -31,7 +31,7 @@ export default (() => {
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
 
-    // URL РїРѕС‚РѕС‡РЅРѕС— СЃС‚РѕСЂС–РЅРєРё
+    // URL поточної сторінки
     const socialUrl =
       fileData.slug === "404"
         ? url.toString()
@@ -201,7 +201,7 @@ export default (() => {
           </>
         )}
 
-        {/* Р†РєРѕРЅРєР° */}
+        {/* Іконка */}
         <link
           rel="icon"
           href={iconPath}
@@ -241,7 +241,7 @@ export default (() => {
             JSResourceToScriptElement(res, true),
           )}
 
-        {/* Р”РѕРґР°С‚РєРѕРІС– РµР»РµРјРµРЅС‚Рё head */}
+        {/* Додаткові елементи head */}
         {additionalHead.map((resource) => {
           if (typeof resource === "function") {
             return resource(fileData)
@@ -285,7 +285,7 @@ export default (() => {
                       installPrompt = null;
                     } else {
                       alert(
-                        "РЇРєС‰Рѕ РІС–РєРЅРѕ РІСЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ РЅРµ Р·вЂ™СЏРІРёР»РѕСЃСЏ, РІС–РґРєСЂРёР№ РјРµРЅСЋ Р±СЂР°СѓР·РµСЂР° С‚Р° РѕР±РµСЂРё В«Р’СЃС‚Р°РЅРѕРІРёС‚Рё РґРѕРґР°С‚РѕРєВ»."
+                        "Якщо вікно встановлення не з’явилося, відкрий меню браузера та обери «Встановити додаток»."
                       );
                     }
                   }
