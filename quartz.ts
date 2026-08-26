@@ -70,11 +70,7 @@ document.addEventListener("nav", ensureMenuHint)
   return component
 }
 
-componentRegistry.register(
-  "PWARegistration",
-  PWARegistration,
-  "local"
-)
+componentRegistry.register("PWARegistration", PWARegistration, "local")
 
 const config = await loadQuartzConfig()
 
