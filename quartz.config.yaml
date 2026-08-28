@@ -1,4 +1,3 @@
-# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: "Чай опівночі"
   pageTitleSuffix: ""
@@ -7,7 +6,7 @@ configuration:
   analytics:
     provider: plausible
   locale: uk-UA
-  baseUrl: anastasiasokolova647-tech.github.io/books-wiki
+  baseUrl: v5.quartz-b07.pages.dev
   ignorePatterns:
     - private
     - templates
