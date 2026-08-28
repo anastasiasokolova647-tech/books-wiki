@@ -6,7 +6,7 @@ configuration:
   analytics:
     provider: plausible
   locale: uk-UA
-  baseUrl: v5.quartz-b07.pages.dev
+  baseUrl: anastasiasokolova647-tech.github.io/books-wiki
   ignorePatterns:
     - private
     - templates
