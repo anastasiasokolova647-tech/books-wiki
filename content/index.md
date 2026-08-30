@@ -6,5 +6,6 @@
 
 
 
+
 <button id="install-app">☕ Встановити «Чай опівночі»</button>
 
