@@ -148,6 +148,11 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      order:
+        - filter
+        - sort
+        - map
     layout:
       position: left
       priority: 50
