@@ -1,4 +1,4 @@
-import { i18n } from "../i18n"
+﻿import { i18n } from "../i18n"
 import { FullSlug, getFileExtension, joinSegments, pathToRoot } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
@@ -125,7 +125,7 @@ export default (() => {
         <link rel="icon" href={iconPath} />
 
         {/* PWA manifest */}
-        <link rel="manifest" href={joinSegments(baseDir, "manifest.webmanifest")} />
+        <link rel="manifest" href="/books-wiki/manifest.webmanifest?v=2" />
 
         <meta name="description" content={description} />
 
@@ -198,3 +198,4 @@ export default (() => {
 
   return Head
 }) satisfies QuartzComponentConstructor
+
