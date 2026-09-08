@@ -36,6 +36,13 @@ if ($LASTEXITCODE -ge 8) {
 }
 
 Write-Host ""
+Write-Host "=== RESTORE PWA FILES ==="
+Copy-Item (Join-Path $Quartz "quartz\static\manifest.webmanifest") $Dest -Force
+Copy-Item (Join-Path $Quartz "quartz\static\icon-192.png") $Dest -Force
+Copy-Item (Join-Path $Quartz "quartz\static\icon-512.png") $Dest -Force
+Copy-Item (Join-Path $Quartz "quartz\static\service-worker.js") $Dest -Force
+Write-Host "PWA FILES RESTORED"
+Write-Host ""
 Write-Host "=== SAFETY CHECK: QUARTZ INDEX ==="
 
 if (-not (Test-Path $DestIndex)) {
@@ -137,3 +144,4 @@ Write-Host "Quartz built successfully."
 Write-Host "Wait for GitHub Actions."
 Write-Host "=========================="
 Read-Host "Press Enter"
+
