@@ -1,6 +1,6 @@
 ﻿$Source = "C:\Users\Asus\OneDrive\Робочий стіл\Курси Час для Себе"
-$Dest   = "C:\Users\Asus\quartz\content"
-$Quartz = "C:\Users\Asus\quartz"
+$Dest   = "C:\Users\Asus\q-pwa-cc4342b6\content"
+$Quartz = "C:\Users\Asus\q-pwa-cc4342b6"
 
 $SourceIndex = Join-Path $Source "index.md"
 $DestIndex   = Join-Path $Dest "index.md"
@@ -128,8 +128,7 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host ""
 Write-Host "=== GIT PUSH ==="
-git push
-
+git push origin HEAD:v5
 if ($LASTEXITCODE -ne 0) {
     Write-Host "STOP: PUSH ERROR"
     Read-Host "Press Enter"
@@ -144,4 +143,5 @@ Write-Host "Quartz built successfully."
 Write-Host "Wait for GitHub Actions."
 Write-Host "=========================="
 Read-Host "Press Enter"
+
 
