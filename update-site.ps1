@@ -1,4 +1,4 @@
-﻿$Source = "C:\Users\Asus\OneDrive\Робочий стіл\Курси Час для Себе"
+﻿$Source = "C:\Users\Asus\OneDrive\Робочий стіл\Чай опівночі"
 $Dest   = "C:\Users\Asus\q-pwa-cc4342b6\content"
 $Quartz = "C:\Users\Asus\q-pwa-cc4342b6"
 
@@ -143,5 +143,6 @@ Write-Host "Quartz built successfully."
 Write-Host "Wait for GitHub Actions."
 Write-Host "=========================="
 Read-Host "Press Enter"
+
 
 
