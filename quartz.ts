@@ -1,6 +1,7 @@
 ﻿import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import { componentRegistry } from "./quartz/components/registry"
 import type { QuartzComponent } from "./quartz/components/types"
+import ListeningSpace from "./quartz/components/ListeningSpace"
 
 const PWARegistration = () => {
   const component: QuartzComponent = () => null
@@ -71,6 +72,7 @@ document.addEventListener("nav", ensureMenuHint)
 }
 
 componentRegistry.register("PWARegistration", PWARegistration, "local")
+componentRegistry.register("ListeningSpace", ListeningSpace, "local")
 
 const config = await loadQuartzConfig()
 
