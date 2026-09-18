@@ -3,7 +3,7 @@
 These short background loops use free stock video from Mixkit under the
 [Mixkit Free License](https://mixkit.co/license/#videoFree).
 
-- `night`: [Nighttime park with illuminated streetlights and trees](https://mixkit.co/free-stock-video/nighttime-park-with-illuminated-streetlights-and-trees-100417/)
+- `night`: [Starry sky over mountains and mist](https://pixabay.com/videos/starry-sky-night-sky-mountains-mist-205427/)
 - `moon`: [Full moon with a soft haze](https://mixkit.co/free-stock-video/full-moon-with-a-soft-haze-4433/)
 - `rain`: [Dark rain clouds moving across the sky](https://mixkit.co/free-stock-video/dark-rain-clouds-moving-across-the-sky-48328/)
 - `sea`: [Sun shining over the ocean](https://coverr.co/videos/sun-shining-over-the-ocean-piplgoew3c)
