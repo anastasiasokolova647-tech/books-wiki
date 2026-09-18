@@ -5,10 +5,10 @@ These short background loops use free stock video from Mixkit under the
 
 - `night`: [Nighttime park with illuminated streetlights and trees](https://mixkit.co/free-stock-video/nighttime-park-with-illuminated-streetlights-and-trees-100417/)
 - `moon`: [Full moon with a soft haze](https://mixkit.co/free-stock-video/full-moon-with-a-soft-haze-4433/)
-- `rain`: [Window on a rainy day](https://mixkit.co/free-stock-video/window-on-a-rainy-day-2846/)
-- `sea`: [Waves of the sea arriving at a beach](https://mixkit.co/free-stock-video/waves-of-the-sea-arriving-at-a-beach-44482/)
-- `wind`: [Tree branches in the breeze](https://mixkit.co/free-stock-video/tree-branches-in-the-breeze-1188/)
+- `rain`: [Dark rain clouds moving across the sky](https://mixkit.co/free-stock-video/dark-rain-clouds-moving-across-the-sky-48328/)
+- `sea`: [Calm ocean across the horizon](https://mixkit.co/free-stock-video/calm-ocean-across-the-horizon-15226/)
+- `wind`: [Gentle breeze blowing through tall grass](https://www.pexels.com/video/gentle-breeze-blowing-through-tall-grass-30639171/)
 - `sun`: [Sunlight crossing the branches of trees](https://mixkit.co/free-stock-video/sunlight-crossing-the-branches-of-trees-1709/)
 
-The local copies are muted, cropped to 16:9, and compressed for use as looping
-website backgrounds.
+The local copies are muted, cropped to 16:9, compressed, and colour-graded into
+the same quiet midnight palette for use as looping website backgrounds.

@@ -4,9 +4,9 @@ import styles from "./styles/listeningSpace.scss"
 const scenes = [
   { key: "night", name: "Ніч", label: "Нічний парк після дощу" },
   { key: "moon", name: "Місяць", label: "Місяць у м'якому серпанку" },
-  { key: "rain", name: "Дощ", label: "Дощові краплі на вікні" },
-  { key: "sea", name: "Море", label: "Хвилі набігають на берег" },
-  { key: "wind", name: "Вітер", label: "Гілки дерев рухаються на вітрі" },
+  { key: "rain", name: "Дощ", label: "Нічне дощове небо" },
+  { key: "sea", name: "Море", label: "Тихе море вночі" },
+  { key: "wind", name: "Вітер", label: "Нічний вітер у траві" },
   { key: "sun", name: "Сонце", label: "Сонячне світло проходить крізь листя" },
 ] as const
 
@@ -26,7 +26,7 @@ const ListeningSpace: QuartzComponentConstructor = () => {
             id="listening-screen"
             data-scene="sea"
             role="group"
-            aria-label="Хвилі набігають на берег"
+            aria-label="Тихе море вночі"
           >
             <video
               class="listening-screen__video"
@@ -91,9 +91,9 @@ const ListeningSpace: QuartzComponentConstructor = () => {
 const LISTENING_SCENES = {
   night: { name: "Ніч", label: "Нічний парк після дощу" },
   moon: { name: "Місяць", label: "Місяць у м'якому серпанку" },
-  rain: { name: "Дощ", label: "Дощові краплі на вікні" },
-  sea: { name: "Море", label: "Хвилі набігають на берег" },
-  wind: { name: "Вітер", label: "Гілки дерев рухаються на вітрі" },
+  rain: { name: "Дощ", label: "Нічне дощове небо" },
+  sea: { name: "Море", label: "Тихе море вночі" },
+  wind: { name: "Вітер", label: "Нічний вітер у траві" },
   sun: { name: "Сонце", label: "Сонячне світло проходить крізь листя" },
 }
 const LISTENING_STORAGE_KEY = "tea-midnight-listening-screen"
@@ -120,7 +120,7 @@ function createListeningSpace() {
   root.innerHTML =
     '<div class="listening-space__intro"><h2 id="listening-title">Обери свій екран</h2><p class="listening-space__hint">Нехай поруч просто рухається природа.</p></div>' +
     '<figure class="listening-screen-wrap">' +
-      '<div class="listening-screen" id="listening-screen" data-scene="sea" role="group" aria-label="Хвилі набігають на берег">' +
+      '<div class="listening-screen" id="listening-screen" data-scene="sea" role="group" aria-label="Тихе море вночі">' +
         '<video class="listening-screen__video" id="listening-video" src="' + listeningAsset("sea", "mp4") + '" poster="' + listeningAsset("sea", "jpg") + '" autoplay muted loop playsinline preload="metadata"></video>' +
         '<div class="listening-screen__shade" aria-hidden="true"></div>' +
         '<div class="listening-screen__toolbar"><span class="listening-screen__name" id="listening-screen-name" aria-live="polite">Море</span>' +
