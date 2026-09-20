@@ -31,8 +31,8 @@ const ListeningSpace: QuartzComponentConstructor = () => {
             <video
               class="listening-screen__video"
               id="listening-video"
-              src="./static/listening-scenes/sea.mp4"
-              poster="./static/listening-scenes/sea.jpg"
+              src="/books-wiki/static/listening-scenes/sea.mp4"
+              poster="/books-wiki/static/listening-scenes/sea.jpg"
               autoplay
               muted
               loop
@@ -99,7 +99,7 @@ const LISTENING_SCENES = {
 const LISTENING_STORAGE_KEY = "tea-midnight-listening-screen"
 
 function listeningAsset(scene, extension) {
-  return new URL("static/listening-scenes/" + scene + "." + extension, window.location.href).href
+  return "/books-wiki/static/listening-scenes/" + scene + "." + extension
 }
 
 function createListeningSpace() {
