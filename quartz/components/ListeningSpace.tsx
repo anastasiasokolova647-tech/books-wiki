@@ -103,7 +103,7 @@ function listeningAsset(scene, extension) {
 }
 
 function createListeningSpace() {
-  if (!["index", "стабілізатор"].includes(document.body.dataset.slug || "")) return null
+  if (!document.body.matches('[data-slug="index"]')) return null
   const center = document.querySelector(".center")
   if (!center) return null
 
