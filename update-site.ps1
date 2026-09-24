@@ -1,6 +1,6 @@
 ﻿$Source = "C:\Users\Asus\OneDrive\Робочий стіл\Чай опівночі"
-$Dest   = "C:\Users\Asus\q-pwa-cc4342b6\content"
-$Quartz = "C:\Users\Asus\q-pwa-cc4342b6"
+$Dest   = "C:\Users\Asus\quartz\content"
+$Quartz = "C:\Users\Asus\quartz"
 
 $SourceIndex = Join-Path $Source "index.md"
 $DestIndex   = Join-Path $Dest "index.md"
@@ -143,6 +143,7 @@ Write-Host "Quartz built successfully."
 Write-Host "Wait for GitHub Actions."
 Write-Host "=========================="
 Read-Host "Press Enter"
+
 
 
 
