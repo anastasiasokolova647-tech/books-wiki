@@ -1,4 +1,4 @@
-﻿import { i18n } from "../i18n"
+import { i18n } from "../i18n"
 import { FullSlug, getFileExtension, joinSegments, pathToRoot } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
@@ -181,10 +181,32 @@ export default (() => {
                       await installPrompt.userChoice;
 
                       installPrompt = null;
-                    } else {
-                      alert(
-                        "Якщо вікно встановлення не з'явилося, відкрий меню браузера та обери «Встановити додаток»."
-                      );
+                                        } else {
+                      const guide = document.querySelector("#install-guide");
+
+                      if (guide instanceof HTMLDetailsElement) {
+                        guide.open = true;
+
+                        const platform =
+                          /iPhone|iPad|iPod/i.test(navigator.userAgent)
+                            ? "ios"
+                            : /Android/i.test(navigator.userAgent)
+                              ? "android"
+                              : "desktop";
+
+                        const platformGuide = guide.querySelector(
+                          '[data-platform="' + platform + '"]'
+                        );
+
+                        if (platformGuide instanceof HTMLDetailsElement) {
+                          platformGuide.open = true;
+                        }
+
+                        guide.scrollIntoView({
+                          behavior: "smooth",
+                          block: "center"
+                        });
+                      }
                     }
                   }
                 );

@@ -172,3 +172,109 @@ body[data-slug="index"] .article-title {
   max-width: 100%;
   overflow: hidden;
 }
+
+/* ========================================
+   INSTALL GUIDE — ЧАЙ ОПІВНОЧІ
+   ======================================== */
+
+.install-guide {
+  margin: 0.9rem 0 1.5rem;
+  border: 1px solid rgba(216, 154, 114, 0.3);
+  border-radius: 18px;
+  background: rgba(6, 15, 28, 0.48);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.install-guide > summary {
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  color: var(--secondary);
+  user-select: none;
+}
+
+.install-guide > summary::-webkit-details-marker,
+.install-device > summary::-webkit-details-marker {
+  display: none;
+}
+
+.install-guide > summary::after {
+  content: "＋";
+  float: right;
+  margin-left: 1rem;
+}
+
+.install-guide[open] > summary::after {
+  content: "−";
+}
+
+.install-guide__body {
+  padding: 0 1rem 1rem;
+}
+
+.install-guide__intro {
+  margin-top: 0;
+  padding: 0.8rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(216, 154, 114, 0.1);
+}
+
+.install-device {
+  padding: 0.25rem 0;
+  border-top: 1px solid rgba(216, 154, 114, 0.2);
+}
+
+.install-device > summary {
+  padding: 0.75rem 0.15rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+}
+
+.install-device > summary::after {
+  content: "⌄";
+  float: right;
+  opacity: 0.72;
+}
+
+.install-device[open] > summary::after {
+  content: "⌃";
+}
+
+.install-device ol {
+  margin: 0.25rem 0 1rem;
+  padding-left: 1.4rem;
+}
+
+.install-device li {
+  margin: 0.42rem 0;
+}
+
+.install-note {
+  padding: 0.75rem 0.85rem;
+  border-left: 3px solid rgba(216, 154, 114, 0.62);
+  border-radius: 10px;
+  background: rgba(216, 154, 114, 0.09);
+}
+
+:root[saved-theme="light"] .install-guide {
+  background: rgba(255, 250, 247, 0.82);
+  box-shadow: 0 14px 34px rgba(90, 60, 50, 0.1);
+}
+
+:root[saved-theme="light"] .install-guide__intro,
+:root[saved-theme="light"] .install-note {
+  background: rgba(166, 99, 69, 0.08);
+}
+
+@media (max-width: 600px) {
+  .install-guide > summary {
+    padding: 0.85rem;
+  }
+
+  .install-guide__body {
+    padding: 0 0.85rem 0.85rem;
+  }
+}
