@@ -1,4 +1,4 @@
-https://youtu.be/TRr4Hyn8Oo0
+![](https://youtu.be/TRr4Hyn8Oo0)
 # Запит
 
 [[Я хочу просто побути поруч із Тим, кого люблю]]
