@@ -1,4 +1,4 @@
-configuration:
+﻿configuration:
   pageTitle: "Чай опівночі"
   pageTitleSuffix: ""
   enableSPA: true
@@ -61,6 +61,7 @@ plugins:
     enabled: true
     options:
       enableInHtmlEmbed: false
+      enableYouTubeEmbed: true
       enableCheckbox: true
     order: 30
   - source: "@quartz-community/github-flavored-markdown"
@@ -287,3 +288,4 @@ layout:
         right: []
     canvas: {}
     bases: {}
+
