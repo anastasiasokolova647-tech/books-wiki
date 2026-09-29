@@ -2,6 +2,7 @@
 import { componentRegistry } from "./quartz/components/registry"
 import type { QuartzComponent } from "./quartz/components/types"
 import ListeningSpace from "./quartz/components/ListeningSpace"
+import FeedbackCards from "./quartz/components/FeedbackCards"
 
 const PWARegistration = () => {
   const component: QuartzComponent = () => null
@@ -73,8 +74,10 @@ document.addEventListener("nav", ensureMenuHint)
 
 componentRegistry.register("PWARegistration", PWARegistration, "local")
 componentRegistry.register("ListeningSpace", ListeningSpace, "local")
+componentRegistry.register("FeedbackCards", FeedbackCards, "local")
 
 const config = await loadQuartzConfig()
 
 export default config
 export const layout = await loadQuartzLayout()
+

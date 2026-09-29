@@ -1,0 +1,430 @@
+.tea-video-block {
+  margin: 1.6rem 0 2rem;
+}
+
+.tea-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--secondary) 34%, transparent);
+  border-radius: 20px;
+  background: #050b14;
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.24),
+    0 0 0 1px rgba(255, 255, 255, 0.025) inset;
+}
+
+.tea-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.tea-video-beneath {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 1.25rem;
+  margin: 0.7rem 0 0;
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.tea-video-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.4rem 0.85rem;
+}
+
+.tea-video-feedback-now,
+.tea-video-links a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--secondary);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tea-video-feedback-now:hover,
+.tea-video-links a:hover {
+  color: var(--dark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.tea-feedback-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 2.4rem 0 1.2rem;
+  padding: clamp(1.15rem, 3.5vw, 2rem);
+  border: 1px solid color-mix(in srgb, var(--secondary) 34%, transparent);
+  border-radius: 24px;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--light) 91%, var(--secondary) 9%), var(--light));
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.13),
+    0 1px 0 rgba(255, 255, 255, 0.06) inset;
+}
+
+.tea-video-block .tea-feedback-card {
+  margin-top: 1.1rem;
+}
+
+.tea-feedback-card[hidden],
+.tea-feedback-card.is-dismissed {
+  display: none !important;
+}
+
+.tea-feedback-card.is-visible {
+  animation: tea-feedback-arrive 760ms cubic-bezier(0.2, 0.78, 0.2, 1) both;
+}
+
+.tea-feedback-glow {
+  position: absolute;
+  z-index: -1;
+  top: -90px;
+  right: -70px;
+  width: 220px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--secondary) 24%, transparent), transparent 68%);
+  pointer-events: none;
+}
+
+.tea-feedback-heading {
+  margin-bottom: 1.25rem;
+}
+
+.tea-feedback-kicker {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--secondary);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.tea-feedback-heading h2,
+.tea-feedback-thanks h2 {
+  margin: 0;
+  color: var(--dark);
+  font-size: clamp(1.3rem, 4vw, 1.72rem);
+  line-height: 1.2;
+}
+
+.tea-feedback-heading p,
+.tea-feedback-thanks p {
+  max-width: 52rem;
+  margin: 0.55rem 0 0;
+  color: var(--darkgray);
+  line-height: 1.55;
+}
+
+.tea-feedback-form {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.tea-feedback-field {
+  display: grid;
+  gap: 0.48rem;
+  margin: 0;
+  color: var(--dark);
+  font-size: 0.98rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.tea-feedback-field small {
+  color: var(--gray);
+  font-size: 0.82em;
+  font-weight: 500;
+}
+
+.tea-feedback-field textarea,
+.tea-feedback-field input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0.78rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--gray) 40%, transparent);
+  border-radius: 14px;
+  outline: none;
+  background: color-mix(in srgb, var(--light) 94%, transparent);
+  color: var(--dark);
+  font: inherit;
+  font-weight: 400;
+  line-height: 1.45;
+  resize: vertical;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.tea-feedback-field textarea::placeholder,
+.tea-feedback-field input::placeholder {
+  color: var(--gray);
+  opacity: 0.88;
+}
+
+.tea-feedback-field textarea:focus,
+.tea-feedback-field input[type="text"]:focus {
+  border-color: var(--secondary);
+  background: var(--light);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--secondary) 18%, transparent);
+}
+
+.tea-feedback-field--name {
+  max-width: 28rem;
+}
+
+.tea-feedback-fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.tea-feedback-fieldset legend {
+  margin-bottom: 0.58rem;
+  color: var(--dark);
+  font-size: 0.98rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.tea-feedback-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.tea-feedback-choice {
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+
+.tea-feedback-choice input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tea-feedback-choice span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.4rem;
+  padding: 0.45rem 0.78rem;
+  border: 1px solid color-mix(in srgb, var(--gray) 38%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--light) 90%, transparent);
+  color: var(--darkgray);
+  font-size: 0.9rem;
+  font-weight: 550;
+  line-height: 1.2;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.tea-feedback-choice:hover span {
+  border-color: color-mix(in srgb, var(--secondary) 64%, transparent);
+  transform: translateY(-1px);
+}
+
+.tea-feedback-choice input:focus-visible + span {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+.tea-feedback-choice input:checked + span {
+  border-color: var(--secondary);
+  background: color-mix(in srgb, var(--secondary) 18%, var(--light));
+  color: var(--dark);
+}
+
+.tea-feedback-prompts {
+  margin: -0.2rem 0 0;
+  color: var(--darkgray);
+  font-size: 0.9rem;
+}
+
+.tea-feedback-prompts summary {
+  width: fit-content;
+  color: var(--secondary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.tea-feedback-prompts > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+}
+
+.tea-feedback-prompts button {
+  margin: 0;
+  padding: 0.42rem 0.62rem;
+  border: 1px dashed color-mix(in srgb, var(--secondary) 48%, transparent);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--darkgray);
+  font: inherit;
+  cursor: pointer;
+}
+
+.tea-feedback-prompts button:hover {
+  border-style: solid;
+  color: var(--dark);
+}
+
+.tea-feedback-privacy {
+  margin: -0.2rem 0 0;
+  color: var(--gray);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.tea-feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.1rem;
+}
+
+.tea-feedback-submit,
+.tea-feedback-later {
+  min-height: 2.65rem;
+  margin: 0;
+  padding: 0.62rem 1rem;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    opacity 160ms ease;
+}
+
+.tea-feedback-submit {
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
+  color: var(--light);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--secondary) 25%, transparent);
+}
+
+.tea-feedback-later {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--darkgray);
+}
+
+.tea-feedback-submit:hover:not(:disabled),
+.tea-feedback-later:hover {
+  transform: translateY(-1px);
+}
+
+.tea-feedback-submit:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.tea-feedback-status {
+  min-height: 1.25em;
+  margin: -0.35rem 0 0;
+  color: var(--secondary);
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.tea-feedback-thanks {
+  display: grid;
+  justify-items: start;
+  padding: 0.4rem 0;
+}
+
+.tea-feedback-thanks > span {
+  display: grid;
+  width: 2.6rem;
+  aspect-ratio: 1;
+  margin-bottom: 0.65rem;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--secondary) 42%, transparent);
+  border-radius: 50%;
+  color: var(--secondary);
+  font-size: 1.25rem;
+}
+
+@keyframes tea-feedback-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.988);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .tea-video-frame,
+  .tea-feedback-card {
+    border-radius: 18px;
+  }
+
+  .tea-video-beneath {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tea-video-links {
+    justify-content: flex-start;
+  }
+
+  .tea-feedback-choices {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tea-feedback-choice span {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tea-feedback-submit,
+  .tea-feedback-later {
+    flex: 1 1 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tea-feedback-card.is-visible,
+  .tea-feedback-choice span,
+  .tea-feedback-submit,
+  .tea-feedback-later {
+    animation: none;
+    transition: none;
+  }
+}
