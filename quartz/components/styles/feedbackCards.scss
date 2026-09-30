@@ -67,8 +67,11 @@
   padding: clamp(1.15rem, 3.5vw, 2rem);
   border: 1px solid color-mix(in srgb, var(--secondary) 34%, transparent);
   border-radius: 24px;
-  background:
-    linear-gradient(145deg, color-mix(in srgb, var(--light) 91%, var(--secondary) 9%), var(--light));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--light) 91%, var(--secondary) 9%),
+    var(--light)
+  );
   box-shadow:
     0 20px 55px rgba(0, 0, 0, 0.13),
     0 1px 0 rgba(255, 255, 255, 0.06) inset;
@@ -95,7 +98,11 @@
   width: 220px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle, color-mix(in srgb, var(--secondary) 24%, transparent), transparent 68%);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--secondary) 24%, transparent),
+    transparent 68%
+  );
   pointer-events: none;
 }
 

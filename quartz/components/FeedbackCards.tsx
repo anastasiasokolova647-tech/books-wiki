@@ -371,6 +371,3 @@ document.addEventListener("render", setupTeaFeedbackCards)
 }
 
 export default FeedbackCards
-
-
-

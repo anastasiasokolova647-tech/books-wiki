@@ -80,4 +80,3 @@ const config = await loadQuartzConfig()
 
 export default config
 export const layout = await loadQuartzLayout()
-
