@@ -35,6 +35,8 @@ function ensureInstallUI() {
       }
       .tea-install-button {
         width: 100%;
+        pointer-events: auto;
+        opacity: 1;
         border: 1px solid var(--secondary);
         border-radius: 12px;
         padding: 0.8rem 1rem;
@@ -108,13 +110,23 @@ function ensureInstallUI() {
       return
     }
 
-    const isiOS = /iphone|ipad|ipod/i.test(navigator.userAgent)
+    const ua = navigator.userAgent
+    const isiOS = /iphone|ipad|ipod/i.test(ua)
+    const isSafari = /^((?!chrome|android).)*safari/i.test(ua)
+    const isFirefox = /firefox/i.test(ua)
+
     if (isiOS) {
       note.innerHTML =
-        'Ще один крок: відкрийте меню <strong>Поділитися</strong> і виберіть <strong>«На початковий екран»</strong>.'
+        'Ще один крок: натисніть <strong>Поділитися</strong> → <strong>«На початковий екран»</strong> → <strong>«Додати»</strong>.'
+    } else if (isFirefox) {
+      note.innerHTML =
+        'Відкрийте меню браузера й виберіть <strong>«Встановити»</strong> або <strong>«Додати на головний екран»</strong>.'
+    } else if (isSafari) {
+      note.innerHTML =
+        'У меню браузера виберіть <strong>«Додати до Dock»</strong> або встановлення вебзастосунку.'
     } else {
-      note.textContent =
-        "Відкрийте меню браузера й виберіть «Встановити застосунок» або «Додати на головний екран»."
+      note.innerHTML =
+        'Браузер поки не дав системну кнопку встановлення. Відкрийте його меню й виберіть <strong>«Встановити застосунок»</strong> або <strong>«Додати на головний екран»</strong>.'
     }
     note.style.display = "block"
   })
