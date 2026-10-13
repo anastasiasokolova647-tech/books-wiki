@@ -1,4 +1,4 @@
-﻿$Source = "C:\Users\Asus\OneDrive\Робочий стіл\Чай опівночі"
+﻿$Source = "C:\Users\Asus\OneDrive\Робочий стіл\Чай опівночі1"
 $Dest   = "C:\Users\Asus\quartz\content"
 $Quartz = "C:\Users\Asus\quartz"
 
