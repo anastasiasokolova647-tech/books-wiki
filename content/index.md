@@ -1,4 +1,3 @@
-[index (3).md](https://github.com/user-attachments/files/33531748/index.3.md)
 ---
 title: Чай опівночі
 ---
