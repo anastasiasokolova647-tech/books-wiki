@@ -1,4 +1,4 @@
-import { cryReasons, getCryPassages } from "./cry-routing.js?v=cry-rain-fatigue-4"
+import { cryReasons, getCryPassages } from "./cry-routing.js?v=cry-depth-pain-6"
 
 function element(tag, className, text) {
   const node = document.createElement(tag)
@@ -51,6 +51,7 @@ export function openCrySupport({ onSea }) {
 
   // Someone crying is already present; choosing a cause changes the videos in place.
   let selected = new Set(["unknown"])
+  let painLevel = null
   let players = []
   let revision = 0
   let finished = false
@@ -93,6 +94,25 @@ export function openCrySupport({ onSea }) {
   const list = element("div", "cry-support__passages")
   list.setAttribute("aria-label", "Відео для тебе")
 
+  const pain = element("fieldset", "cry-support__pain")
+  pain.append(element("legend", "cry-support__pain-title", "Сила болю"))
+  const painChoices = element("div", "cry-support__pain-choices")
+  for (let value = 1; value <= 10; value++) {
+    const label = element("label", "cry-support__pain-choice")
+    const input = element("input")
+    input.type = "radio"
+    input.name = "cry-support-pain"
+    input.value = String(value)
+    input.setAttribute("aria-label", `${value} із 10`)
+    input.addEventListener("change", () => {
+      painLevel = value
+      showVideos()
+    })
+    label.append(input, element("span", "", String(value)))
+    painChoices.append(label)
+  }
+  pain.append(painChoices)
+
   function showVideos() {
     clearPlayers()
     list.replaceChildren()
@@ -103,7 +123,7 @@ export function openCrySupport({ onSea }) {
       choice.setAttribute("aria-checked", String(active))
       choice.classList.toggle("is-selected", active)
     }
-    for (const passage of getCryPassages([...selected])) {
+    for (const passage of getCryPassages([...selected], [], painLevel).slice(0, 5)) {
       const card = element("article", "cry-support__player")
       const frame = element("iframe", "cry-support__video")
       const params = new URLSearchParams({
@@ -155,7 +175,7 @@ export function openCrySupport({ onSea }) {
     choice.setAttribute("role", "checkbox")
     group.append(choice)
   }
-  container.append(top, group, list)
+  container.append(top, pain, group, list)
   showVideos()
 
   if (typeof dialog.showModal === "function") dialog.showModal()

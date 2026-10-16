@@ -1,4 +1,4 @@
-import { cryPassages } from "./cry-passages.js?v=cry-rain-fatigue-4"
+import { cryPassages } from "./cry-passages.js?v=cry-depth-pain-6"
 
 const cryingReactions = new Set(["Плач", "Плачу", "Плакати разом", "Ридаю", "Плачу на самоті"])
 
@@ -10,16 +10,17 @@ export const cryReasons = [
   { id: "loss", label: "Втрата", hint: "Горюю або сумую за тим, кого втрачаю" },
   { id: "selfBlame", label: "Сором чи самозвинувачення", hint: "Здається, я недостатньо зробила / зробив" },
   { id: "tenderness", label: "Ніжність чи полегшення", hint: "Мене нарешті зігріли, почули або обійняли" },
-  { id: "unknown", label: "Поки не знаю", hint: "Можна без пояснень" },
+  { id: "unknown", label: "Просто поплакати", hint: "Можна без пояснень" },
 ]
 
-export function getCryPassages(reasonIds = [], excludedIds = []) {
+export function getCryPassages(reasonIds = [], excludedIds = [], painLevel = null) {
   const valid = new Set(cryReasons.map((reason) => reason.id))
   const selected = [...new Set(reasonIds)].filter((id) => valid.has(id) && id !== "unknown")
   const excluded = new Set(excludedIds)
   const depth = { quiet: 0, tender: 1, deep: 2 }
+  const level = Number.isInteger(painLevel) && painLevel >= 1 && painLevel <= 10 ? painLevel : null
 
-  return cryPassages
+  const passages = cryPassages
     .filter((passage) => {
       if (excluded.has(passage.id)) return false
       // This route offers someone crying alongside the visitor. Kindness,
@@ -29,7 +30,7 @@ export function getCryPassages(reasonIds = [], excludedIds = []) {
       if (passage.requiresExplicitReason && !selected.includes(passage.requiresExplicitReason)) {
         return false
       }
-      if (selected.length === 0) return passage.unknownSafe
+      if (selected.length === 0) return level !== null || passage.showByDefault
       return passage.reasons.some((reason) => selected.includes(reason))
     })
     .map((passage, order) => ({
@@ -38,15 +39,22 @@ export function getCryPassages(reasonIds = [], excludedIds = []) {
       matches: passage.reasons.filter((reason) => selected.includes(reason)).length,
     }))
     .sort((left, right) => {
-      if (selected.includes("exhaustion") || selected.length === 0) {
-        const difference = depth[left.passage.intensity] - depth[right.passage.intensity]
-        if (difference) return difference
+      if (level !== null) {
+        const distance = Math.abs(left.passage.depthScore - level) - Math.abs(right.passage.depthScore - level)
+        if (distance) return distance
       }
+      // The author wants emotionally deep company. Do not automatically soften
+      // the default or fatigue route into the lightest available story.
+      const difference = depth[right.passage.intensity] - depth[left.passage.intensity]
+      if (difference) return difference
       return (
         right.matches - left.matches ||
-        depth[left.passage.intensity] - depth[right.passage.intensity] ||
         left.order - right.order
       )
     })
     .map(({ passage }) => passage)
+
+  if (level === null || passages.length === 0) return passages
+  const closest = Math.min(...passages.map((passage) => Math.abs(passage.depthScore - level)))
+  return passages.filter((passage) => Math.abs(passage.depthScore - level) <= closest + 1)
 }
