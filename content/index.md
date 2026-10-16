@@ -1,12 +1,10 @@
-[index.md](https://github.com/user-attachments/files/33530929/index.md)
-
----
+[index (1).md](https://github.com/user-attachments/files/33531155/index.1.md)---
 title: Чай опівночі
 ---
 
-# Чай опівночі
-
-#
+<style>
+h1.article-title { display: none !important; }
+</style>
 
 # Місце, де можна знайти потрібне, коли важко.
 
