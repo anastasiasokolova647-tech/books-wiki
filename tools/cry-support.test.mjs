@@ -55,7 +55,11 @@ test("every video retains evidence from a crying-reaction section of the supplie
     assert(passage.rationale && passage.title && passage.cryingEvidence)
     assert.equal(passage.cryingEvidence.sourceArchive, "Чайний чумайдан(8).zip")
     assert(passage.cryingEvidence.sourcePath.endsWith(".md"))
-    assert(passage.cryingEvidence.reactionTags.some((tag) => ["Плач", "Плачу", "Плакати разом", "Ридаю", "Плачу на самоті"].includes(tag)))
+    assert(
+      passage.cryingEvidence.reactionTags.some((tag) =>
+        ["Плач", "Плачу", "Плакати разом", "Ридаю", "Плачу на самоті"].includes(tag),
+      ),
+    )
     if (passage.reasons.includes("loss")) assert.equal(passage.requiresExplicitReason, "loss")
   }
 })
@@ -76,5 +80,9 @@ test("every listening option points to the video supplied in its own source card
 test("a warm scene without crying never appears in the crying route", () => {
   const excluded = new Set(["rainbow-tea-visit", "rainbow-fatigue", "night-sleep-island"])
   assert(cryPassages.every((passage) => !excluded.has(passage.id)))
-  assert(cryPassages.every((passage) => !["uTfeiJUnzZI", "J9Tc0H5-rVk", "Py8Z29S26OM"].includes(passage.video.id)))
+  assert(
+    cryPassages.every(
+      (passage) => !["uTfeiJUnzZI", "J9Tc0H5-rVk", "Py8Z29S26OM"].includes(passage.video.id),
+    ),
+  )
 })
