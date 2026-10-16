@@ -32,11 +32,11 @@ export const cryPassages = [
     "title": "Дощ",
     "book": "Дівчинка-веселка",
     "reasons": [
-      "hurt"
+      "exhaustion"
     ],
     "intensity": "tender",
     "unknownSafe": true,
-    "rationale": "Брат плаче, ховаючи сльози за дощем; дівчинка залишається в Його обіймах.",
+    "rationale": "Авторське прочитання: плач від перевтоми. Брат ховає сльози за дощем; дівчинка залишається в Його обіймах.",
     "cryingEvidence": {
       "section": "Як я реагую",
       "reactionTags": [
@@ -50,6 +50,33 @@ export const cryPassages = [
       "id": "leaD3KPanKo",
       "sourceUrl": "https://www.youtube.com/watch?v=leaD3KPanKo&list=PLgf50mlM2gm8krs6Hms_dyGp6qSIPKmXT&index=19",
       "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/18. Дощ.md",
+      "scope": "chapter"
+    }
+  },
+  {
+    "id": "rainbow-unfair",
+    "title": "Як можна?",
+    "book": "Дівчинка-веселка",
+    "reasons": [
+      "hurt",
+      "selfBlame"
+    ],
+    "intensity": "deep",
+    "unknownSafe": false,
+    "rationale": "Дівчинка плаче через несправедливість: близького ранять, а потім звинувачують. Брат плаче разом із нею.",
+    "cryingEvidence": {
+      "section": "Теми (попередній формат картки)",
+      "reactionTags": [
+        "Плач"
+      ],
+      "sourceArchive": "Чайний чумайдан(8).zip",
+      "archiveSha256": "33d453f20bda89f28332d8287427afa766a2ec9f1f1b114811c4753a26adccdd",
+      "sourcePath": "Tea-four-blankets-20261009-091701754/77. Я зроблю все, щоб зцілити Тебе.md"
+    },
+    "video": {
+      "id": "wm8CxbpvlLY",
+      "sourceUrl": "https://www.youtube.com/watch?v=wm8CxbpvlLY&list=PLgf50mlM2gm8krs6Hms_dyGp6qSIPKmXT&index=79",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/78. Як можна.md",
       "scope": "chapter"
     }
   },

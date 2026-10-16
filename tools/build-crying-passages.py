@@ -23,9 +23,13 @@ SELECTION = [
          intensity='tender', unknownSafe=True,
          rationale='Веселка плаче від виснаження. Брат лягає поруч і теж плаче.'),
     dict(id='rainbow-rain', title='Дощ', book='Дівчинка-веселка',
-         videoId='leaD3KPanKo', reasons=['hurt'],
+         videoId='leaD3KPanKo', reasons=['exhaustion'],
          intensity='tender', unknownSafe=True,
-         rationale='Брат плаче, ховаючи сльози за дощем; дівчинка залишається в Його обіймах.'),
+         rationale='Авторське прочитання: плач від перевтоми. Брат ховає сльози за дощем; дівчинка залишається в Його обіймах.'),
+    dict(id='rainbow-unfair', title='Як можна?', book='Дівчинка-веселка',
+         videoId='wm8CxbpvlLY', reasons=['hurt', 'selfBlame'],
+         intensity='deep', unknownSafe=False,
+         rationale='Дівчинка плаче через несправедливість: близького ранять, а потім звинувачують. Брат плаче разом із нею.'),
     dict(id='night-together', title='Ніч на двох', book='Крізь ніч до світла',
          videoId='GOnMwALQMns', reasons=['loneliness', 'fear', 'tenderness'],
          intensity='tender', unknownSafe=False,
@@ -74,6 +78,17 @@ def reaction_evidence(text):
                 tags.append(label)
         if tags:
             return dict(section=heading, reactionTags=list(dict.fromkeys(tags)))
+    # Earlier vault cards used a flat Themes block instead of separate facets.
+    # Accept an explicit crying tag there, never a mention of tears in a synopsis.
+    legacy = re.search(r'\*\*Теми:\*\*([\s\S]*?)(?=\n\*\*|\n---|\Z)', text)
+    if legacy:
+        tags = []
+        for link in re.findall(r'\[\[([^\]]+)\]\]', legacy.group(1)):
+            label = re.sub(r'^\d+\s+', '', link.split('|')[-1].split('/')[-1].strip())
+            if label in CRYING:
+                tags.append(label)
+        if tags:
+            return dict(section='Теми (попередній формат картки)', reactionTags=list(dict.fromkeys(tags)))
     return None
 
 

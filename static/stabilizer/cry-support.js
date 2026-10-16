@@ -1,4 +1,4 @@
-import { cryReasons, getCryPassages } from "./cry-routing.js?v=cry-together-3"
+import { cryReasons, getCryPassages } from "./cry-routing.js?v=cry-rain-fatigue-4"
 
 function element(tag, className, text) {
   const node = document.createElement(tag)

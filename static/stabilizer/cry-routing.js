@@ -1,4 +1,4 @@
-import { cryPassages } from "./cry-passages.js?v=cry-together-3"
+import { cryPassages } from "./cry-passages.js?v=cry-rain-fatigue-4"
 
 const cryingReactions = new Set(["Плач", "Плачу", "Плакати разом", "Ридаю", "Плачу на самоті"])
 

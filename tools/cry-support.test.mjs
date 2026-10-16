@@ -11,6 +11,13 @@ test("exhaustion offers crying from exhaustion rather than rest or bereavement",
   assert(passages.every((passage) => passage.cryingEvidence.reactionTags.length > 0))
 })
 
+test("Rain follows the author's exhaustion interpretation and is not offered for hurt", () => {
+  assert(getCryPassages(["exhaustion"]).some((passage) => passage.id === "rainbow-rain"))
+  const hurt = getCryPassages(["hurt"])
+  assert(hurt.every((passage) => passage.id !== "rainbow-rain"))
+  assert(hurt.some((passage) => passage.id === "rainbow-unfair"))
+})
+
 test("not knowing the cause still offers someone crying, without a bereavement scene", () => {
   for (const selection of [[], ["unknown"], ["not-a-reason"]]) {
     const passages = getCryPassages(selection)
@@ -45,7 +52,7 @@ test("a rejected passage does not reappear and exhausting a list does not fall b
   assert(partial.every((passage) => passage.id !== "night-hercules"))
 })
 
-test("every video retains evidence from a crying-reaction section of the supplied archive", () => {
+test("every video retains an explicit crying tag from the supplied archive", () => {
   assert.equal(new Set(cryPassages.map((passage) => passage.id)).size, cryPassages.length)
   assert.deepEqual(
     new Set(cryPassages.map((passage) => passage.book)),
