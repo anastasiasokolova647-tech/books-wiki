@@ -1,9 +1,11 @@
-[index (1).md](https://github.com/user-attachments/files/33531155/index.1.md)---
+[index_fixed.md](https://github.com/user-attachments/files/33531267/index_fixed.md)
+---
 title: Чай опівночі
 ---
 
 <style>
-h1.article-title { display: none !important; }
+.article-title { display: none !important; }
+.content-meta { display: none !important; }
 </style>
 
 # Місце, де можна знайти потрібне, коли важко.
@@ -17,8 +19,5 @@ h1.article-title { display: none !important; }
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen>
 </iframe>
-
-
-
 
 <button id="install-app">☕ Встановити «Чай опівночі»</button>
