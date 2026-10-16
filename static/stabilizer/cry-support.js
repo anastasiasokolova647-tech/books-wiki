@@ -1,4 +1,4 @@
-import { cryReasons, getCryPassages } from "./cry-routing.js?v=video-1"
+import { cryReasons, getCryPassages } from "./cry-routing.js?v=video-simple-2"
 
 function element(tag, className, text) {
   const node = document.createElement(tag)
@@ -14,6 +14,28 @@ function button(label, action, className = "") {
   return node
 }
 
+let youtubeReady
+function loadYouTubeAPI() {
+  if (window.YT?.Player) return Promise.resolve(window.YT)
+  if (youtubeReady) return youtubeReady
+  youtubeReady = new Promise((resolve) => {
+    const previous = window.onYouTubeIframeAPIReady
+    window.onYouTubeIframeAPIReady = () => {
+      try {
+        previous?.()
+      } finally {
+        resolve(window.YT)
+      }
+    }
+    const script = element("script")
+    script.src = "https://www.youtube.com/iframe_api"
+    script.async = true
+    script.addEventListener("error", () => resolve(null))
+    document.head.append(script)
+  })
+  return youtubeReady
+}
+
 export function openCrySupport({ onSea }) {
   const existing = document.querySelector(".cry-support")
   if (existing) return existing
@@ -22,19 +44,27 @@ export function openCrySupport({ onSea }) {
   const previousOverflow = document.body.style.overflow
   const dialog = element("dialog", "cry-support")
   dialog.setAttribute("aria-labelledby", "cry-support-title")
-  dialog.setAttribute("aria-describedby", "cry-support-description")
   const container = element("div", "cry-support__container")
   dialog.append(container)
   document.body.append(dialog)
   document.body.style.overflow = "hidden"
 
-  let selected = new Set()
-  const excluded = new Set()
+  // Quiet videos are already visible; choosing a cause changes them in place.
+  let selected = new Set(["unknown"])
+  let players = []
+  let revision = 0
   let finished = false
+
+  function clearPlayers() {
+    revision++
+    for (const player of players) player.destroy()
+    players = []
+  }
 
   function finish(goToSea = false) {
     if (finished) return
     finished = true
+    clearPlayers()
     document.body.style.overflow = previousOverflow
     if (dialog.open && typeof dialog.close === "function") dialog.close()
     dialog.remove()
@@ -48,168 +78,88 @@ export function openCrySupport({ onSea }) {
   })
   dialog.addEventListener("close", () => finish())
 
-  function heading(title, description, backAction) {
-    container.replaceChildren()
-    const top = element("div", "cry-support__top")
-    top.append(
-      backAction
-        ? button("← Назад", backAction, "cry-support__back")
-        : element("span", "cry-support__brand", "Чай опівночі"),
-      button("До моря", () => finish(true), "cry-support__back"),
-      button("Закрити", () => finish(), "cry-support__close"),
-    )
-    const heading = element("h1", "cry-support__title", title)
-    heading.id = "cry-support-title"
-    heading.tabIndex = -1
-    const text = element("p", "cry-support__description", description)
-    text.id = "cry-support-description"
-    container.append(top, heading, text)
-    dialog.scrollTop = 0
-    if (dialog.open) heading.focus({ preventScroll: true })
-  }
+  const top = element("div", "cry-support__top")
+  const title = element("h1", "cry-support__title", "Плачу")
+  title.id = "cry-support-title"
+  title.tabIndex = -1
+  top.append(
+    title,
+    button("До моря", () => finish(true), "cry-support__back"),
+    button("Закрити", () => finish(), "cry-support__close"),
+  )
 
-  function seaButton() {
-    return button("Просто побути біля моря", () => finish(true), "cry-support__sea")
-  }
+  const group = element("fieldset", "cry-support__reasons")
+  group.append(element("legend", "cry-support__sr-only", "Що зараз найближче?"))
+  const list = element("div", "cry-support__passages")
+  list.setAttribute("aria-label", "Відео для тебе")
 
-  function showReasons() {
-    heading("Плачу", "Що стоїть за сльозами? Можна вибрати кілька причин або не пояснювати нічого.")
-    const group = element("fieldset", "cry-support__reasons")
-    const legend = element("legend", "cry-support__sr-only", "Що зараз найближче?")
-    group.append(legend)
-    const show = button("Показати відео", () => showPassages(), "cry-support__primary")
-    show.disabled = selected.size === 0
-
-    function updateChoices() {
-      for (const choice of group.querySelectorAll("[data-cry-reason]")) {
-        const active = selected.has(choice.dataset.cryReason)
-        choice.setAttribute("aria-checked", String(active))
-        choice.classList.toggle("is-selected", active)
-      }
-      show.disabled = selected.size === 0
+  function showVideos() {
+    clearPlayers()
+    list.replaceChildren()
+    const currentRevision = revision
+    const frames = []
+    for (const choice of group.querySelectorAll("[data-cry-reason]")) {
+      const active = selected.has(choice.dataset.cryReason)
+      choice.setAttribute("aria-checked", String(active))
+      choice.classList.toggle("is-selected", active)
     }
-
-    for (const reason of cryReasons) {
-      const choice = button("", () => {
-        if (selected.has(reason.id)) selected.delete(reason.id)
-        else if (reason.id === "unknown") selected = new Set(["unknown"])
-        else {
-          selected.delete("unknown")
-          selected.add(reason.id)
-        }
-        excluded.clear()
-        updateChoices()
-      }, "cry-support__reason")
-      choice.dataset.cryReason = reason.id
-      choice.setAttribute("role", "checkbox")
-      choice.append(
-        element("span", "cry-support__reason-name", reason.label),
-        element("small", "cry-support__reason-hint", reason.hint),
-      )
-      group.append(choice)
-    }
-    updateChoices()
-    const actions = element("div", "cry-support__actions")
-    actions.append(show, seaButton())
-    container.append(group, actions)
-  }
-
-  function showPassages() {
-    const names = cryReasons.filter((reason) => selected.has(reason.id)).map((reason) => reason.label)
-    const unknown = selected.size === 0 || selected.has("unknown")
-    heading(
-      "Що відгукується зараз?",
-      unknown
-        ? "Можна просто слухати тиху історію без пояснення своїх сліз. Або одразу побути біля моря."
-        : `Твій вибір: ${names.join(" · ")}. Обери відео — можна просто слухати.`,
-      showReasons,
-    )
-    const list = element("div", "cry-support__passages")
-    const passages = getCryPassages([...selected], [...excluded])
-    for (const passage of passages) {
-      const card = element("article", "cry-support__card")
-      const depth = { quiet: "Тиха сцена", tender: "Сцена з ніжністю та сльозами", deep: "Глибша сцена" }
-      card.append(
-        element("p", "cry-support__source", `${passage.book} · ${depth[passage.intensity]}`),
-        element("h2", "cry-support__passage-title", passage.title),
-        element("p", "cry-support__synopsis", passage.description),
-      )
-      if (passage.contentNote) card.append(element("p", "cry-support__note", passage.contentNote))
-      if (passage.video.contentNote) card.append(element("p", "cry-support__note", passage.video.contentNote))
-      const actions = element("div", "cry-support__card-actions")
-      const listen = button("▶ Слухати", () => showVideo(passage), "cry-support__primary cry-support__listen")
-      listen.setAttribute("aria-label", `Слухати «${passage.title}»`)
-      const read = button("Текст уривка", () => showReader(passage), "cry-support__read")
-      read.setAttribute("aria-label", `Читати «${passage.title}»`)
-      actions.append(listen, read)
-      card.append(actions)
+    for (const passage of getCryPassages([...selected])) {
+      const card = element("article", "cry-support__player")
+      const frame = element("iframe", "cry-support__video")
+      const params = new URLSearchParams({
+        rel: "0",
+        playsinline: "1",
+        enablejsapi: "1",
+        origin: window.location.origin,
+      })
+      frame.src = `https://www.youtube-nocookie.com/embed/${passage.video.id}?${params}`
+      frame.title = `${passage.title} — ${passage.book}`
+      frame.loading = "lazy"
+      frame.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture"
+      frame.allowFullscreen = true
+      frame.referrerPolicy = "strict-origin-when-cross-origin"
+      card.append(frame)
       list.append(card)
+      frames.push(frame)
     }
-    if (passages.length === 0) {
-      const empty = element("div", "cry-support__empty")
-      empty.append(
-        element("p", "", "Ці уривки зараз не відгукнулися. Можна змінити вибір або просто побути біля моря."),
-        button("Змінити вибір", showReasons),
-      )
-      list.append(empty)
-    }
-    const actions = element("div", "cry-support__actions")
-    actions.append(seaButton())
-    container.append(list, actions)
+    // Keep the native play button. The API only prevents overlapping recordings.
+    loadYouTubeAPI().then((YT) => {
+      if (!YT || finished || revision !== currentRevision) return
+      for (const frame of frames) {
+        players.push(new YT.Player(frame, {
+          events: {
+            onStateChange(event) {
+              if (event.data !== YT.PlayerState.PLAYING) return
+              for (const other of players) {
+                if (other !== event.target) other.pauseVideo()
+              }
+            },
+          },
+        }))
+      }
+    })
   }
 
-  function passageActions(passage) {
-    const actions = element("div", "cry-support__reader-actions")
-    actions.append(
-      button("Не про мене — інший уривок", () => {
-        excluded.add(passage.id)
-        showPassages()
-      }),
-      seaButton(),
-      button("Повернутися до вибору", showReasons, "cry-support__back"),
-    )
-    return actions
+  for (const reason of cryReasons) {
+    const choice = button(reason.label, () => {
+      if (reason.id === "unknown") selected = new Set(["unknown"])
+      else {
+        selected.delete("unknown")
+        if (selected.has(reason.id)) selected.delete(reason.id)
+        else selected.add(reason.id)
+        if (selected.size === 0) selected.add("unknown")
+      }
+      showVideos()
+    }, "cry-support__reason")
+    choice.dataset.cryReason = reason.id
+    choice.setAttribute("role", "checkbox")
+    group.append(choice)
   }
+  container.append(top, group, list)
+  showVideos()
 
-  function showVideo(passage) {
-    heading(passage.title, "Можна просто слухати. Якщо відео не почалося, натисни ▶ у плеєрі.", showPassages)
-    const player = element("div", "cry-support__player")
-    const frame = element("iframe", "cry-support__video")
-    frame.src = `https://www.youtube-nocookie.com/embed/${passage.video.id}?autoplay=1&rel=0&playsinline=1`
-    frame.title = `Слухати «${passage.title}» — ${passage.book}`
-    frame.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture"
-    frame.allowFullscreen = true
-    frame.referrerPolicy = "strict-origin-when-cross-origin"
-    player.append(frame)
-    const source = element("p", "cry-support__source", `${passage.book} · Анастасія Соколова · Відеозапис розділу`)
-    container.append(player, source)
-    if (passage.contentNote) container.append(element("p", "cry-support__note", passage.contentNote))
-    if (passage.video.contentNote) container.append(element("p", "cry-support__note", passage.video.contentNote))
-    const mediaActions = element("div", "cry-support__card-actions")
-    const external = element("a", "cry-support__button cry-support__external", "Відкрити на YouTube ↗")
-    external.href = `https://www.youtube.com/watch?v=${passage.video.id}`
-    external.target = "_blank"
-    external.rel = "noopener noreferrer"
-    const read = button("Текст уривка", () => showReader(passage), "cry-support__read")
-    mediaActions.append(external, read)
-    container.append(mediaActions, passageActions(passage))
-  }
-
-  function showReader(passage) {
-    heading(passage.title, `${passage.book} · Анастасія Соколова · Уривок`, showPassages)
-    const reader = element("article", "cry-support__reader")
-    reader.setAttribute("aria-label", `Уривок «${passage.title}»`)
-    for (const paragraph of passage.paragraphs) {
-      reader.append(element("p", "", paragraph))
-    }
-    const listen = button("▶ Слухати", () => showVideo(passage), "cry-support__primary")
-    container.append(listen, reader, passageActions(passage))
-  }
-
-  showReasons()
   if (typeof dialog.showModal === "function") dialog.showModal()
   else {
-    // Preserve the same controls on older embedded browsers without <dialog> support.
     dialog.setAttribute("open", "")
     dialog.setAttribute("role", "dialog")
     dialog.setAttribute("aria-modal", "true")
@@ -225,6 +175,6 @@ export function openCrySupport({ onSea }) {
       if (event.key === "Escape") finish()
     })
   }
-  dialog.querySelector("h1")?.focus({ preventScroll: true })
+  title.focus({ preventScroll: true })
   return dialog
 }
