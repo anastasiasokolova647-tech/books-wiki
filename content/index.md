@@ -1,3 +1,4 @@
+
 ---
 title: Чай опівночі
 ---
@@ -11,13 +12,30 @@ article h1.article-title,
 }
 </style>
 
-<div style="max-width:760px;margin:1rem 0 3rem;text-align:left;">
-  <h2 style="font-family:Georgia,serif;font-size:clamp(1.5rem,3vw,2rem);line-height:1.3;margin:0 0 1rem;color:#e9b58e;">Місце, де можна знайти потрібне, коли важко</h2>
-  <p style="font-size:1rem;line-height:1.7;opacity:.88;margin:0 0 1.5rem;">Тут можна побути собою. Без поспіху, без оцінок, із чашкою теплого чаю.</p>
-  <div style="border:1px solid rgba(233,181,142,.3);border-radius:14px;overflow:hidden;">
-    <div style="position:relative;padding-bottom:56.25%;height:0;">
-      <iframe src="https://www.youtube.com/embed/Oi9ED1TeDaw" title="Презентація «Чай опівночі»" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+<section style="max-width:760px;text-align:left;margin:1rem 0 7rem;">
+
+  <h1 style="font-family:Georgia,serif;font-size:clamp(2rem,4vw,2.6rem);line-height:1.2;color:#e9b58e;margin:0 0 1rem;">
+    Чай опівночі
+  </h1>
+
+  <h2 style="font-family:Georgia,serif;font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:normal;line-height:1.35;color:#e9b58e;margin:0 0 1.3rem;">
+    Місце, де можна знайти потрібне, коли важко
+  </h2>
+
+  <p style="max-width:550px;line-height:1.8;opacity:.88;">
+    Тут можна побути собою. Без поспіху, без оцінок, із чашкою теплого чаю.
+  </p>
+
+  <div aria-hidden="true" style="height:clamp(140px,24vw,280px);"></div>
+
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+    <button id="install-app" style="background:#ad7051;color:white;border:1px solid #d49b77;border-radius:999px;padding:.8rem 1.4rem;font-size:1rem;cursor:pointer;">
+      ☕ Встановити «Чай опівночі»
+    </button>
+
+    <a href="/books-wiki/prezentatsiia" style="display:inline-block;border:1px solid #d49b77;border-radius:999px;padding:.8rem 1.4rem;color:#e9b58e;text-decoration:none;font-size:1rem;">
+      ▶ Про додаток
+    </a>
   </div>
-  <p style="margin:1.5rem 0 0;"><button id="install-app" style="background:#ad7051;color:white;border:1px solid #d49b77;border-radius:999px;padding:.8rem 1.4rem;font-size:1rem;cursor:pointer;">☕ Встановити «Чай опівночі»</button></p>
-</div>
+
+</section>
