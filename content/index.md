@@ -33,7 +33,7 @@ article h1.article-title,
       ☕ Встановити «Чай опівночі»
     </button>
 
-  <a href="/books-wiki/prezentatsiia" style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-block;">▶ Про додаток</a>
+<a href="https://anastasiasokolova647-tech.github.io/books-wiki/prezentatsiia" style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-block;">▶ Про додаток</a>
   </div>
 
 </section>
