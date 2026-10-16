@@ -1,4 +1,4 @@
-import { cryReasons, getCryPassages } from "./cry-routing.js?v=video-simple-2"
+import { cryReasons, getCryPassages } from "./cry-routing.js?v=cry-together-3"
 
 function element(tag, className, text) {
   const node = document.createElement(tag)
@@ -49,7 +49,7 @@ export function openCrySupport({ onSea }) {
   document.body.append(dialog)
   document.body.style.overflow = "hidden"
 
-  // Quiet videos are already visible; choosing a cause changes them in place.
+  // Someone crying is already present; choosing a cause changes the videos in place.
   let selected = new Set(["unknown"])
   let players = []
   let revision = 0

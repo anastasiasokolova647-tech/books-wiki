@@ -1,4 +1,6 @@
-import { cryPassages } from "./cry-passages.js?v=video-simple-2"
+import { cryPassages } from "./cry-passages.js?v=cry-together-3"
+
+const cryingReactions = new Set(["Плач", "Плачу", "Плакати разом", "Ридаю", "Плачу на самоті"])
 
 export const cryReasons = [
   { id: "exhaustion", label: "Виснаження", hint: "Забагато всього, а сил уже немає" },
@@ -20,11 +22,14 @@ export function getCryPassages(reasonIds = [], excludedIds = []) {
   return cryPassages
     .filter((passage) => {
       if (excluded.has(passage.id)) return false
+      // This route offers someone crying alongside the visitor. Kindness,
+      // relaxation or a general emotion tag alone are not enough to qualify.
+      if (!passage.cryingEvidence?.reactionTags.some((tag) => cryingReactions.has(tag))) return false
       // A general tear/body tag must never send an exhausted visitor into bereavement.
       if (passage.requiresExplicitReason && !selected.includes(passage.requiresExplicitReason)) {
         return false
       }
-      if (selected.length === 0) return passage.unknownSafe && passage.intensity === "quiet"
+      if (selected.length === 0) return passage.unknownSafe
       return passage.reasons.some((reason) => selected.includes(reason))
     })
     .map((passage, order) => ({
