@@ -49,7 +49,7 @@ test("all passages retain author, source metadata and nonempty source text", () 
   assert.equal(new Set(cryPassages.map((passage) => passage.id)).size, cryPassages.length)
   assert.deepEqual(
     new Set(cryPassages.map((passage) => passage.book)),
-    new Set(["Дівчинка-веселка", "Крізь ніч"]),
+    new Set(["Дівчинка-веселка", "Крізь ніч до світла"]),
   )
   for (const passage of cryPassages) {
     assert(passage.description && passage.title && passage.provenance)

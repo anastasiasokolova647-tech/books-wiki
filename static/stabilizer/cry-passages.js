@@ -26,7 +26,7 @@ export const cryPassages = [
   {
     "id": "night-unloading",
     "title": "Профілактика: розвантажувальний день",
-    "book": "Крізь ніч",
+    "book": "Крізь ніч до світла",
     "reasons": [
       "exhaustion",
       "loneliness"
@@ -60,7 +60,7 @@ export const cryPassages = [
   {
     "id": "night-sleep-island",
     "title": "Острів сну",
-    "book": "Крізь ніч",
+    "book": "Крізь ніч до світла",
     "reasons": [
       "exhaustion"
     ],
@@ -136,7 +136,7 @@ export const cryPassages = [
   {
     "id": "night-enough",
     "title": "Я достатній",
-    "book": "Крізь ніч",
+    "book": "Крізь ніч до світла",
     "reasons": [
       "selfBlame",
       "loneliness"
@@ -220,7 +220,7 @@ export const cryPassages = [
   {
     "id": "night-loss",
     "title": "Втрата",
-    "book": "Крізь ніч",
+    "book": "Крізь ніч до світла",
     "reasons": [
       "loss"
     ],
@@ -256,7 +256,7 @@ export const cryPassages = [
   {
     "id": "night-voice",
     "title": "Ну й гаразд!",
-    "book": "Крізь ніч",
+    "book": "Крізь ніч до світла",
     "reasons": [
       "hurt"
     ],
