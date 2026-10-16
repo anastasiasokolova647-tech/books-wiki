@@ -1,4 +1,4 @@
-import { cryReasons, getCryPassages } from "./cry-routing.js"
+import { cryReasons, getCryPassages } from "./cry-routing.js?v=video-1"
 
 function element(tag, className, text) {
   const node = document.createElement(tag)
@@ -77,7 +77,7 @@ export function openCrySupport({ onSea }) {
     const group = element("fieldset", "cry-support__reasons")
     const legend = element("legend", "cry-support__sr-only", "Що зараз найближче?")
     group.append(legend)
-    const show = button("Показати уривки", () => showPassages(), "cry-support__primary")
+    const show = button("Показати відео", () => showPassages(), "cry-support__primary")
     show.disabled = selected.size === 0
 
     function updateChoices() {
@@ -120,8 +120,8 @@ export function openCrySupport({ onSea }) {
     heading(
       "Що відгукується зараз?",
       unknown
-        ? "Можна почати з тихої сцени без пояснення своїх сліз. Або одразу побути біля моря."
-        : `Твій вибір: ${names.join(" · ")}. Прочитай короткий опис і виріши, чи хочеться заходити в цю історію.`,
+        ? "Можна просто слухати тиху історію без пояснення своїх сліз. Або одразу побути біля моря."
+        : `Твій вибір: ${names.join(" · ")}. Обери відео — можна просто слухати.`,
       showReasons,
     )
     const list = element("div", "cry-support__passages")
@@ -135,9 +135,14 @@ export function openCrySupport({ onSea }) {
         element("p", "cry-support__synopsis", passage.description),
       )
       if (passage.contentNote) card.append(element("p", "cry-support__note", passage.contentNote))
-      const read = button("Читати уривок", () => showReader(passage), "cry-support__read")
+      if (passage.video.contentNote) card.append(element("p", "cry-support__note", passage.video.contentNote))
+      const actions = element("div", "cry-support__card-actions")
+      const listen = button("▶ Слухати", () => showVideo(passage), "cry-support__primary cry-support__listen")
+      listen.setAttribute("aria-label", `Слухати «${passage.title}»`)
+      const read = button("Текст уривка", () => showReader(passage), "cry-support__read")
       read.setAttribute("aria-label", `Читати «${passage.title}»`)
-      card.append(read)
+      actions.append(listen, read)
+      card.append(actions)
       list.append(card)
     }
     if (passages.length === 0) {
@@ -153,13 +158,7 @@ export function openCrySupport({ onSea }) {
     container.append(list, actions)
   }
 
-  function showReader(passage) {
-    heading(passage.title, `${passage.book} · Анастасія Соколова · Уривок`, showPassages)
-    const reader = element("article", "cry-support__reader")
-    reader.setAttribute("aria-label", `Уривок «${passage.title}»`)
-    for (const paragraph of passage.paragraphs) {
-      reader.append(element("p", "", paragraph))
-    }
+  function passageActions(passage) {
     const actions = element("div", "cry-support__reader-actions")
     actions.append(
       button("Не про мене — інший уривок", () => {
@@ -169,7 +168,42 @@ export function openCrySupport({ onSea }) {
       seaButton(),
       button("Повернутися до вибору", showReasons, "cry-support__back"),
     )
-    container.append(reader, actions)
+    return actions
+  }
+
+  function showVideo(passage) {
+    heading(passage.title, "Можна просто слухати. Якщо відео не почалося, натисни ▶ у плеєрі.", showPassages)
+    const player = element("div", "cry-support__player")
+    const frame = element("iframe", "cry-support__video")
+    frame.src = `https://www.youtube-nocookie.com/embed/${passage.video.id}?autoplay=1&rel=0&playsinline=1`
+    frame.title = `Слухати «${passage.title}» — ${passage.book}`
+    frame.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture"
+    frame.allowFullscreen = true
+    frame.referrerPolicy = "strict-origin-when-cross-origin"
+    player.append(frame)
+    const source = element("p", "cry-support__source", `${passage.book} · Анастасія Соколова · Відеозапис розділу`)
+    container.append(player, source)
+    if (passage.contentNote) container.append(element("p", "cry-support__note", passage.contentNote))
+    if (passage.video.contentNote) container.append(element("p", "cry-support__note", passage.video.contentNote))
+    const mediaActions = element("div", "cry-support__card-actions")
+    const external = element("a", "cry-support__button cry-support__external", "Відкрити на YouTube ↗")
+    external.href = `https://www.youtube.com/watch?v=${passage.video.id}`
+    external.target = "_blank"
+    external.rel = "noopener noreferrer"
+    const read = button("Текст уривка", () => showReader(passage), "cry-support__read")
+    mediaActions.append(external, read)
+    container.append(mediaActions, passageActions(passage))
+  }
+
+  function showReader(passage) {
+    heading(passage.title, `${passage.book} · Анастасія Соколова · Уривок`, showPassages)
+    const reader = element("article", "cry-support__reader")
+    reader.setAttribute("aria-label", `Уривок «${passage.title}»`)
+    for (const paragraph of passage.paragraphs) {
+      reader.append(element("p", "", paragraph))
+    }
+    const listen = button("▶ Слухати", () => showVideo(passage), "cry-support__primary")
+    container.append(listen, reader, passageActions(passage))
   }
 
   showReasons()

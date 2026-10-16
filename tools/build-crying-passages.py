@@ -8,6 +8,7 @@ import argparse
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlparse, parse_qs
 from docx import Document
 
 
@@ -137,7 +138,40 @@ def main():
              paragraphs=rainbow_extract(1689, 1705),
              provenance=dict(kind='docx', firstParagraph=1689, lastParagraphExclusive=1705)),
     ]
-    target = Path(__file__).resolve().parents[1] / 'static/stabilizer/cry-passages.js'
+    root = Path(__file__).resolve().parents[1]
+    cards = {
+        'rainbow-fatigue': 'Дівчинка-веселка/1 Готові/8. Втома.md',
+        'night-unloading': 'Крізь ніч/Уривки/44. «Профілактика».md',
+        'night-sleep-island': 'Крізь ніч/Уривки/87. Острів Сну.md',
+        'rainbow-moon-night': 'Дівчинка-веселка/1 Готові/13. Ніч під місяцем.md',
+        'rainbow-tea-visit': 'Дівчинка-веселка/1 Готові/50. Привіт, можна зайти.md',
+        'night-enough': 'Крізь ніч/Уривки/8. «Я достатній».md',
+        'rainbow-trust': 'Дівчинка-веселка/1 Готові/61. Довірся Мені.md',
+        'rainbow-stay-close': 'Дівчинка-веселка/1 Готові/68. Ти не втратиш Його.md',
+        'night-loss': 'Крізь ніч/Уривки/48. «Втрата».md',
+        'night-voice': 'Крізь ніч/Уривки/11. «Ну й гаразд!».md',
+        'rainbow-unfair': 'Дівчинка-веселка/1 Готові/78. Як можна.md',
+    }
+    media_notes = {
+        'night-unloading': 'У відео весь розділ: далі є сильні сльози та сцена біля піаніно.',
+        'night-voice': 'Відео починається з болючої самотності й сильного плачу; підтримка приходить пізніше.',
+    }
+    for passage in passages:
+        source_card = Path('content/Коли шукаєш відповідь (проза))') / cards[passage['id']]
+        text = (root / source_card).read_text(encoding='utf-8')
+        match = re.search(r'https?://(?:www\.)?(?:youtube\.com|youtu\.be)/[^\s)\]>]+', text)
+        if not match:
+            raise ValueError(f'No author-provided video in {source_card}')
+        url = match.group().replace('&amp;', '&')
+        parsed = urlparse(url)
+        video_id = parsed.path.strip('/') if parsed.hostname == 'youtu.be' else parse_qs(parsed.query).get('v', [''])[0]
+        if not re.fullmatch(r'[A-Za-z0-9_-]{11}', video_id):
+            raise ValueError(f'Invalid YouTube video in {source_card}')
+        passage['video'] = dict(id=video_id, sourceUrl=url, sourceCard=source_card.as_posix(), scope='chapter')
+        if passage['id'] in media_notes:
+            passage['video']['contentNote'] = media_notes[passage['id']]
+
+    target = root / 'static/stabilizer/cry-passages.js'
     output = '// Reviewed excerpts from the author’s supplied books. Do not rewrite quotations.\n'
     output += 'export const cryPassages = ' + json.dumps(passages, ensure_ascii=False, indent=2) + '\n'
     target.write_text(output, encoding='utf-8')

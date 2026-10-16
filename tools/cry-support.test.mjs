@@ -1,5 +1,6 @@
 import test from "node:test"
 import assert from "node:assert/strict"
+import fs from "node:fs"
 import { cryPassages } from "../static/stabilizer/cry-passages.js"
 import { cryReasons, getCryPassages } from "../static/stabilizer/cry-routing.js"
 
@@ -56,5 +57,18 @@ test("all passages retain author, source metadata and nonempty source text", () 
     assert(passage.paragraphs.length > 0)
     assert(passage.paragraphs.every((paragraph) => paragraph.trim().length > 0))
     if (passage.reasons.includes("loss")) assert.equal(passage.requiresExplicitReason, "loss")
+  }
+})
+
+test("every listening option points to the video supplied in its own source card", () => {
+  for (const passage of cryPassages) {
+    assert.match(passage.video.id, /^[A-Za-z0-9_-]{11}$/)
+    assert.equal(passage.video.scope, "chapter")
+    const card = fs.readFileSync(new URL(`../${passage.video.sourceCard}`, import.meta.url), "utf8")
+    assert(card.includes(passage.video.sourceUrl), passage.id)
+    const source = new URL(passage.video.sourceUrl)
+    const id =
+      source.hostname === "youtu.be" ? source.pathname.slice(1) : source.searchParams.get("v")
+    assert.equal(passage.video.id, id, passage.id)
   }
 })

@@ -24,7 +24,7 @@ result = result.replace(unknown, "onClick:oe,children:`Хочеться плак
 const cryLabel = 'onClick:oe,"aria-label":`Плач`,children:`;(`'
 if (result.split(cryLabel).length !== 2) throw new Error("The home crying button changed")
 result = result.replace(cryLabel, 'onClick:oe,"aria-label":`Плачу`,children:`;( Плачу`')
-result = 'import { openCrySupport } from "../cry-support.js";\n' + result
+result = 'import { openCrySupport } from "../cry-support.js?v=video-1";\n' + result
 const hash = createHash("sha256").update(result).digest("hex").slice(0, 10)
 const name = `assets/index-cry-${hash}.js`
 fs.writeFileSync(path.join(base, name), result)
@@ -38,11 +38,15 @@ let updated = html
   .replace(/\.\/assets\/index-(?:C0o7WV-C|cry-[a-f0-9]+)\.js/, `./${name}`)
   .replace('<html lang="en">', '<html lang="uk">')
   .replace("<title>stabilizer</title>", "<title>Стабілізатор — Чай опівночі</title>")
-if (!updated.includes('href="./cry-support.css"')) {
+if (!/href="\.\/cry-support\.css(?:\?[^\"]*)?"/.test(updated)) {
   updated = updated.replace(
     "</head>",
-    '  <link rel="stylesheet" href="./cry-support.css">\n  </head>',
+    '  <link rel="stylesheet" href="./cry-support.css?v=video-1">\n  </head>',
   )
 }
+updated = updated.replace(
+  /href="\.\/cry-support\.css(?:\?[^\"]*)?"/,
+  'href="./cry-support.css?v=video-1"',
+)
 fs.writeFileSync(htmlPath, updated)
 console.log(`Crying support wired: ${name}`)

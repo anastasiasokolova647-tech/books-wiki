@@ -48,6 +48,10 @@
 .cry-support .cry-support__synopsis { max-width: none; margin: 0 0 16px; color: #d8dddb; text-align: left; font-size: 16px; }
 .cry-support .cry-support__note { margin: 0 0 18px; color: #dec7b1; font-size: 14px; text-align: left; }
 .cry-support .cry-support__read { font-size: 15px; min-height: 46px; }
+.cry-support__card-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cry-support__player { width: 100%; aspect-ratio: 16 / 9; min-height: 200px; margin: 0 0 18px; border-radius: 18px; overflow: hidden; background: #000; }
+.cry-support__video { display: block; width: 100%; height: 100%; border: 0; }
+.cry-support .cry-support__external { text-decoration: none; font-size: 15px; }
 .cry-support__reader { margin-top: 32px; }
 .cry-support .cry-support__reader p { max-width: none; margin: 0 0 1.25em; text-align: left; font: 400 20px/1.85 Georgia, "Times New Roman", serif; color: #eee9e2; overflow-wrap: anywhere; }
 .cry-support__reader-actions { padding-top: 22px; border-top: 1px solid #93a8a13d; }

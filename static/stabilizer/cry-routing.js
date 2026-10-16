@@ -1,4 +1,4 @@
-import { cryPassages } from "./cry-passages.js"
+import { cryPassages } from "./cry-passages.js?v=video-1"
 
 export const cryReasons = [
   { id: "exhaustion", label: "Виснаження", hint: "Забагато всього, а сил уже немає" },

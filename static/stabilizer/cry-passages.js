@@ -21,6 +21,12 @@ export const cryPassages = [
       "kind": "docx",
       "firstParagraph": 178,
       "lastParagraphExclusive": 187
+    },
+    "video": {
+      "id": "J9Tc0H5-rVk",
+      "sourceUrl": "https://www.youtube.com/watch?v=J9Tc0H5-rVk&list=PLgf50mlM2gm8krs6Hms_dyGp6qSIPKmXT&index=9",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/8. Втома.md",
+      "scope": "chapter"
     }
   },
   {
@@ -55,6 +61,13 @@ export const cryPassages = [
         103,
         104
       ]
+    },
+    "video": {
+      "id": "qA0ADRw4mk4",
+      "sourceUrl": "https://www.youtube.com/watch?v=qA0ADRw4mk4&list=PLgf50mlM2gm85bx_axdLsoIPWjVJPXcJQ&index=44",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Крізь ніч/Уривки/44. «Профілактика».md",
+      "scope": "chapter",
+      "contentNote": "У відео весь розділ: далі є сильні сльози та сцена біля піаніно."
     }
   },
   {
@@ -77,6 +90,12 @@ export const cryPassages = [
         190,
         191
       ]
+    },
+    "video": {
+      "id": "Py8Z29S26OM",
+      "sourceUrl": "https://www.youtube.com/watch?v=Py8Z29S26OM&list=PLgf50mlM2gm85bx_axdLsoIPWjVJPXcJQ&index=87",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Крізь ніч/Уривки/87. Острів Сну.md",
+      "scope": "chapter"
     }
   },
   {
@@ -101,6 +120,12 @@ export const cryPassages = [
       "kind": "docx",
       "firstParagraph": 250,
       "lastParagraphExclusive": 255
+    },
+    "video": {
+      "id": "EAvItTDFC-A",
+      "sourceUrl": "https://www.youtube.com/watch?v=EAvItTDFC-A&list=PLgf50mlM2gm8krs6Hms_dyGp6qSIPKmXT&index=14&pp=iAQBsAgC",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/13. Ніч під місяцем.md",
+      "scope": "chapter"
     }
   },
   {
@@ -131,6 +156,12 @@ export const cryPassages = [
       "kind": "docx",
       "firstParagraph": 1037,
       "lastParagraphExclusive": 1057
+    },
+    "video": {
+      "id": "uTfeiJUnzZI",
+      "sourceUrl": "https://www.youtube.com/watch?v=uTfeiJUnzZI&list=PLgf50mlM2gm8krs6Hms_dyGp6qSIPKmXT&index=51",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/50. Привіт, можна зайти.md",
+      "scope": "chapter"
     }
   },
   {
@@ -163,6 +194,12 @@ export const cryPassages = [
         17,
         18
       ]
+    },
+    "video": {
+      "id": "xL_zaBTFLEA",
+      "sourceUrl": "https://www.youtube.com/watch?v=xL_zaBTFLEA&list=PLgf50mlM2gm85bx_axdLsoIPWjVJPXcJQ&index=8",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Крізь ніч/Уривки/8. «Я достатній».md",
+      "scope": "chapter"
     }
   },
   {
@@ -190,6 +227,12 @@ export const cryPassages = [
       "kind": "docx",
       "firstParagraph": 1325,
       "lastParagraphExclusive": 1334
+    },
+    "video": {
+      "id": "DRAMMrDMQxM",
+      "sourceUrl": "https://www.youtube.com/watch?v=DRAMMrDMQxM&list=PLgf50mlM2gm8krs6Hms_dyGp6qSIPKmXT&index=62",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/61. Довірся Мені.md",
+      "scope": "chapter"
     }
   },
   {
@@ -215,6 +258,12 @@ export const cryPassages = [
       "kind": "docx",
       "firstParagraph": 1460,
       "lastParagraphExclusive": 1472
+    },
+    "video": {
+      "id": "hjR8AD6aqRs",
+      "sourceUrl": "https://www.youtube.com/watch?v=hjR8AD6aqRs&list=PLgf50mlM2gm8krs6Hms_dyGp6qSIPKmXT&index=69",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/68. Ти не втратиш Його.md",
+      "scope": "chapter"
     }
   },
   {
@@ -251,6 +300,12 @@ export const cryPassages = [
         112,
         113
       ]
+    },
+    "video": {
+      "id": "FRKr8dAVqjk",
+      "sourceUrl": "https://www.youtube.com/watch?v=FRKr8dAVqjk&list=PLgf50mlM2gm85bx_axdLsoIPWjVJPXcJQ&index=48",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Крізь ніч/Уривки/48. «Втрата».md",
+      "scope": "chapter"
     }
   },
   {
@@ -275,6 +330,13 @@ export const cryPassages = [
       "pages": [
         23
       ]
+    },
+    "video": {
+      "id": "ZRWCT6B95rI",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZRWCT6B95rI&list=PLgf50mlM2gm85bx_axdLsoIPWjVJPXcJQ&index=11",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Крізь ніч/Уривки/11. «Ну й гаразд!».md",
+      "scope": "chapter",
+      "contentNote": "Відео починається з болючої самотності й сильного плачу; підтримка приходить пізніше."
     }
   },
   {
@@ -304,6 +366,12 @@ export const cryPassages = [
       "kind": "docx",
       "firstParagraph": 1689,
       "lastParagraphExclusive": 1705
+    },
+    "video": {
+      "id": "wm8CxbpvlLY",
+      "sourceUrl": "https://youtu.be/wm8CxbpvlLY?si=M3WjCgwFs39in7LS",
+      "sourceCard": "content/Коли шукаєш відповідь (проза))/Дівчинка-веселка/1 Готові/78. Як можна.md",
+      "scope": "chapter"
     }
   }
 ]
