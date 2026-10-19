@@ -124,6 +124,8 @@ export default (() => {
         {/* Р†РєРѕРЅРєР° */}
         <link rel="icon" href={iconPath} />
 
+        <link rel="stylesheet" href="/books-wiki/static/chai-gallery.css?v=1" />
+        <script src="/books-wiki/static/chai-gallery.js?v=1" defer />
         {/* PWA manifest */}
         <link rel="manifest" href="/books-wiki/manifest.webmanifest?v=2" />
 
