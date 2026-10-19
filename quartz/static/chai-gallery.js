@@ -16,6 +16,9 @@
     const today = Math.floor(Date.now()/86400000);
     const file = auto ? candidates[today % candidates.length].file : selected;
     document.documentElement.style.setProperty("--chai-gallery-image", `url("${ROOT}${file}")`);
+    const light = document.documentElement.getAttribute("saved-theme") === "light";
+    const overlay = light ? "linear-gradient(rgba(255,250,245,.20),rgba(255,250,245,.36))" : "linear-gradient(rgba(6,10,18,.24),rgba(6,10,18,.44))";
+    document.body.style.setProperty("background", `${overlay}, url("${ROOT}${file}") center center / cover fixed no-repeat`, "important");
     document.documentElement.setAttribute("data-chai-gallery", "active");
     const label = document.querySelector("#chai-gallery-current");
     if (label) label.textContent = (pictures.find(p=>p.file===file)?.title ?? "Краєвид") + (auto ? " · автоматично" : "");
