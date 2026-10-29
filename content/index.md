@@ -26,6 +26,8 @@ article h1.article-title,
     Тут можна побути собою. Без поспіху, без оцінок, із чашкою теплого чаю.
   </p>
 
+  <p><a href="/books-wiki/static/no-mask/index.html" data-router-ignore data-no-popover style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-block;">Кімната без маски ↗</a></p>
+
   <div aria-hidden="true" style="height:clamp(140px,24vw,280px);"></div>
 
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
