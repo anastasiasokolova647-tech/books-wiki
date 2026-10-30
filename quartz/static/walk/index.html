@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#172c29"><title>Прогулянка · Чай опівночі</title><link rel="manifest" href="../../manifest.webmanifest"><link rel="icon" href="../icon-192.png"><link rel="stylesheet" href="walk.css"><script src="../tea-install.js" defer></script><script src="stories.js" defer></script><script src="scenery.js" defer></script><script src="walk.js" defer></script></head>
+<body data-scene="forest">
+<div id="landscape" aria-hidden="true"><canvas id="scenery"></canvas><div class="shade"></div><div id="drift"></div></div>
+<header><a class="brand" href="#welcome">☾ <span>Чай опівночі<small>ПРОГУЛЯНКА</small></span></a><div class="settings"><button id="sound" aria-pressed="false" title="Звуковий фон">Шелест вимкнено</button><button id="motion" aria-pressed="false">Менше руху</button></div></header>
+<main>
+<section id="welcome" class="welcome"><p class="eyebrow">МІСЦЕ, ДЕ МОЖНА ЗАЛИШИТИСЬ</p><h1>Тут безпечно<br><em>бути собою.</em></h1><p class="intro">Обери, куди підемо.</p><div class="scene-cards">
+<button data-scene="forest" class="scene-card forest"><span class="scene-icon">🌿</span><strong>Ліс</strong><span>Стежка поміж дерев</span><span class="arrow">↗</span></button>
+<button data-scene="field" class="scene-card field"><span class="scene-icon">🌾</span><strong>Поле</strong><span>Квіти, вітер і простір</span><span class="arrow">↗</span></button>
+<button data-scene="sea" class="scene-card sea"><span class="scene-icon">🌊</span><strong>Море</strong><span>Хвилі й теплий пісок</span><span class="arrow">↗</span></button>
+</div><p class="quiet-note">Без поспіху. Можна відповідати, слухати або просто побути.</p></section>
+<section id="walk" hidden><div class="walk-heading"><p class="eyebrow" id="scene-label">ЛІС</p><button id="pause" aria-pressed="false">Зупинитися</button></div>
+<div id="question" class="nature-note" tabindex="-1"><span class="nature-mark" aria-hidden="true">❧</span><h2 id="question-title"></h2><div id="answers" class="answers"></div><button id="skip" class="text-button">Пропустити →</button></div>
+<div id="rest" hidden class="rest"><button id="return-question" class="soft-button">Повернутися до запитань</button></div>
+<section id="stories" class="story-panel" hidden tabindex="-1"><p class="eyebrow">ІСТОРІЇ З «ЧАЮ ОПІВНОЧІ»</p><h2>Що послухаємо?</h2><div id="wish-filter" class="filters" aria-label="Обрати настрій історії"></div><div id="story-list" class="story-list"></div><button id="leave-stories" class="text-button">Просто побути з пейзажем →</button></section>
+<section id="player-panel" class="player-panel" hidden tabindex="-1"><button id="back-stories" class="text-button">← Інші історії</button><h2 id="playing-title"></h2><p id="playing-collection"></p><div id="player-host"></div><p id="player-status" role="status"></p><a id="youtube-link" target="_blank" rel="noopener">Відкрити відео на YouTube ↗</a><div id="take-world" hidden><h3>Хочеш узяти цей світ із собою?</h3><div id="tea-install-wrap"><button id="tea-install-button" type="button" class="primary">Встановити Чай опівночі</button><div id="tea-install-note" role="status" aria-live="polite"></div></div></div></section>
+</section>
+</main>
+<footer id="walk-nav" hidden><nav class="scene-switch" aria-label="Змінити пейзаж"><button data-scene="forest" aria-pressed="true">Ліс</button><button data-scene="field" aria-pressed="false">Поле</button><button data-scene="sea" aria-pressed="false">Море</button></nav><div class="footer-actions"><button id="rest-button">Просто побути</button><button id="stories-button">До історій ↗</button></div></footer>
+<noscript>Для інтерактивної прогулянки увімкніть JavaScript. <a href="../../">Перейти до Чаю опівночі</a></noscript>
+</body></html>

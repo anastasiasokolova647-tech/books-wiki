@@ -150,72 +150,9 @@ export default (() => {
           }
         })}
 
-        {/* PWA install button */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (() => {
-                let installPrompt = null;
-
-                window.addEventListener(
-                  "beforeinstallprompt",
-                  (event) => {
-                    event.preventDefault();
-                    installPrompt = event;
-                  }
-                );
-
-                document.addEventListener(
-                  "click",
-                  async (event) => {
-                    const target = event.target;
-
-                    if (
-                      !(target instanceof HTMLElement) ||
-                      !target.closest("#install-app")
-                    ) {
-                      return;
-                    }
-
-                    if (installPrompt) {
-                      installPrompt.prompt();
-
-                      await installPrompt.userChoice;
-
-                      installPrompt = null;
-                                        } else {
-                      const guide = document.querySelector("#install-guide");
-
-                      if (guide instanceof HTMLDetailsElement) {
-                        guide.open = true;
-
-                        const platform =
-                          /iPhone|iPad|iPod/i.test(navigator.userAgent)
-                            ? "ios"
-                            : /Android/i.test(navigator.userAgent)
-                              ? "android"
-                              : "desktop";
-
-                        const platformGuide = guide.querySelector(
-                          '[data-platform="' + platform + '"]'
-                        );
-
-                        if (platformGuide instanceof HTMLDetailsElement) {
-                          platformGuide.open = true;
-                        }
-
-                        guide.scrollIntoView({
-                          behavior: "smooth",
-                          block: "center"
-                        });
-                      }
-                    }
-                  }
-                );
-              })();
-            `,
-          }}
-        />
+        <script src="/books-wiki/static/tea-install.js" defer />
+        <link rel="stylesheet" href="/books-wiki/static/tea-video-links.css" />
+        <script src="/books-wiki/static/tea-video-links.js" defer />
       </head>
     )
   }
