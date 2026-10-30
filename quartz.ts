@@ -1,3 +1,5 @@
+import FeedbackCards from "./quartz/components/FeedbackCards"
+import TeaNavigation from "./quartz/components/TeaNavigation"
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import { componentRegistry } from "./quartz/components/registry"
 import type { QuartzComponent } from "./quartz/components/types"
@@ -58,7 +60,7 @@ document.addEventListener("nav", ensureMenuHint)
 componentRegistry.register("PWARegistration", PWARegistration, "local")
 componentRegistry.register("ListeningSpace", ListeningSpace, "local")
 componentRegistry.register("FeedbackCards", FeedbackCards, "local")
-
+componentRegistry.register("TeaNavigation", TeaNavigation, "local")
 const config = await loadQuartzConfig()
 
 export default config
