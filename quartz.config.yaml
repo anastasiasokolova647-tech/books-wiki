@@ -1,4 +1,5 @@
-﻿configuration:
+
+configuration:
   pageTitle: "Чай опівночі"
   pageTitleSuffix: ""
   enableSPA: true
@@ -157,6 +158,11 @@ plugins:
     layout:
       position: left
       priority: 50
+  - source: TeaNavigation
+    enabled: true
+    layout:
+      position: left
+      priority: 45
   - source: "@quartz-community/graph"
     enabled: true
     layout:
