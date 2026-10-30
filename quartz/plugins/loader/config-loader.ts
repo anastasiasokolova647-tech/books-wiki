@@ -1,21 +1,3 @@
-    posArray.push({
-      component,
-      priority: layoutDefaults?.defaultPriority ?? 50,
-    })
-  }
-
-  // Sort by priority and resolve groups
-  const result: Partial<FullPageLayout> = {}
-
-  for (const [position, items] of Object.entries(positions)) {
-    items.sort((a, b) => a.priority - b.priority)
-
-    const resolved = resolveGroups(items, layoutConfig.groups ?? {})
-    const key = position as keyof Pick<
-      FullPageLayout,
-      "header" | "left" | "right" | "beforeBody" | "afterBody" | "footer"
-    >
-    ;(result as Record<string, QuartzComponent[]>)[key] = resolved
   }
 
   return result
@@ -126,5 +108,5 @@ function applyConditionWrapper(component: QuartzComponent, conditionName: string
   return ConditionalRender({
     component,
     condition: predicate,
-      }) as QuartzComponent
+  }) as QuartzComponent
 }
