@@ -350,7 +350,7 @@ function setupTeaFeedbackCards() {
 
   const youtubeLinks = Array.from(article.querySelectorAll("a[href]"))
     .map((link) => ({ link, id: teaYoutubeId(link.href) }))
-    .filter((item) => item.id)
+    .filter((item) => item.id && !item.link.classList.contains("tea-original-video") && !item.link.closest(".tea-video-block"))
 
   if (youtubeLinks.length) {
     youtubeLinks.forEach((item, index) => teaPlaceVideo(item.link, item.id, index))

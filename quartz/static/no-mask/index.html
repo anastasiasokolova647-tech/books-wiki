@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; media-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<title>Кімната без маски · Чай опівночі</title>
+<link rel="icon" href="../tea-icon.png">
+<link rel="stylesheet" href="room.css">
+<script src="room.js" defer></script>
+</head>
+<body>
+<div id="landscape" aria-hidden="true"></div>
+<header><a id="home" href="../../" aria-label="Повернутися до Чаю опівночі">← Чай опівночі</a><button id="scenes-open" type="button">Змінити краєвид</button></header>
+<main>
+<p class="eyebrow">ТУТ МОЖНА БУТИ СОБОЮ</p>
+<h1>Кімната без маски</h1>
+<p class="welcome">Ну що, розказуй, якщо хочеться.</p>
+<section id="writing" aria-label="Мовчазний простір">
+<label class="sr-only" for="letter">Усе, що хочеться сказати</label>
+<textarea id="letter" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" placeholder="Можна будь-якими словами. А можна просто побути тут." aria-describedby="privacy-short"></textarea>
+<div class="below-letter"><p id="privacy-short">Без відповідей. Без збереження.<br>Після виходу чи оновлення сторінки написане зникне.</p><button id="release" class="primary" type="button" disabled>Відпустити <span aria-hidden="true">↗</span></button></div>
+</section>
+<details id="insight-panel"><summary>Щось хочеш залишити собі?</summary><div class="insight-inner"><label class="sr-only" for="insight">Твій інсайт</label><textarea id="insight" rows="3" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" placeholder="Тільки те, що ти сама чи сам хочеш зберегти."></textarea><p class="small">Лише це поле можна зберегти в цьому браузері. На спільному пристрої його зможе побачити інша людина.</p><button id="save-insight" type="button" disabled>Зберегти собі</button><span id="save-status" role="status"></span></div></details>
+<details id="saved-panel"><summary>Залишене собі</summary><div id="saved-list"></div></details>
+</main>
+<footer><span>Можна й без слів.</span><div><button id="privacy-open" type="button">Про приватність</button><button id="help-open" type="button">Якщо потрібна людина</button></div></footer>
+<dialog id="confirm-release" aria-labelledby="release-title"><h2 id="release-title">Відпустити цей лист?</h2><p id="release-description">Текст зникне без можливості відновлення.</p><div class="dialog-actions"><button data-close type="button" autofocus>Ще побути</button><button id="confirm-send" class="primary" type="button">Так, відпустити</button></div></dialog>
+<dialog id="confirm-leave" aria-labelledby="leave-title"><h2 id="leave-title">Вийти з кімнати?</h2><p>Лист і незбережений інсайт зникнуть. Збережені інсайти залишаться в цьому браузері.</p><div class="dialog-actions"><button data-close type="button" autofocus>Залишитися</button><button id="leave" type="button">Вийти й видалити</button></div></dialog>
+<dialog id="scenes" aria-labelledby="scenes-title"><div class="dialog-heading"><h2 id="scenes-title">Твій краєвид</h2><button data-close type="button" aria-label="Закрити вибір краєвиду">✕</button></div><div id="scene-list"></div><label class="motion"><input type="checkbox" id="reduce-motion"> Менше руху</label><p class="small">Системне налаштування зменшення руху теж враховується.</p></dialog>
+<dialog id="privacy" aria-labelledby="privacy-title"><div class="dialog-heading"><h2 id="privacy-title">Твої слова залишаються тут</h2><button data-close type="button" aria-label="Закрити інформацію про приватність">✕</button></div><p>Кімната не надсилає написане до ШІ, на сервер чи в аналітику. Чернетки не записуються в сховище браузера. Зберігається тільки інсайт після кнопки «Зберегти собі».</p><p>Після підтвердженого відпускання поля очищуються відразу. Анімація показує порожній паперовий лист. При виході або оновленні сторінки незбережений текст також зникає.</p><p>Браузер може не показати попередження під час закриття, особливо на телефоні. Розширення, клавіатура пристрою та знімки екрана перебувають поза контролем сайту. Відвідування сторінки може лишитися в історії браузера; її зміст кімната туди не записує.</p></dialog>
+<dialog id="help" aria-labelledby="help-title"><div class="dialog-heading"><h2 id="help-title">Якщо потрібна людина</h2><button data-close type="button" aria-label="Закрити допомогу">✕</button></div><p>Можна подзвонити близькій людині й попросити побути поруч. Не обов’язково пояснювати все.</p><p>Якщо зараз є загроза життю чи безпеці в Україні:</p><p><a class="call" href="tel:112">Зателефонувати 112</a></p><p class="small">Екстрена допомога. В іншій країні — місцевий екстрений номер.</p><a href="https://mvs.gov.ua/mvs-specprojekti/sluzba-112-usi-ekstreni-sluzbi-za-jedinim-nomerom" target="_blank" rel="noopener noreferrer">Про службу 112 — МВС України ↗</a><p class="small">Ця кнопка доступна завжди. Кімната не читає й не перевіряє твій текст.</p></dialog>
+<div id="river-scene" hidden aria-hidden="true"><div class="river-moon"></div><div class="river-water"></div><div class="paper-drift"><div class="paper"><div class="fold"></div></div></div></div>
+<noscript><p>Щоб відпускання працювало, потрібен JavaScript. Написаний текст нікуди не надсилається.</p></noscript>
+</body>
+</html>
