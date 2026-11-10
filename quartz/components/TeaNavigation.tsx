@@ -1,15 +1,10 @@
-
 import type { QuartzComponent } from "./types"
 
 const TeaNavigation: QuartzComponent = () => {
   return (
     <nav class="tea-navigation" aria-label="Особливі розділи">
-      <a href="/books-wiki/static/walk/">
-        🌿 Прогулянка
-      </a>
-      <a href="/books-wiki/prezentatsiia">
-        ✨ Презентація
-      </a>
+      <a href="/books-wiki/static/walk/">🌿 Прогулянка</a>
+      <a href="/books-wiki/prezentatsiia">✨ Презентація</a>
     </nav>
   )
 }
