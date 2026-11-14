@@ -49,6 +49,9 @@ jobs:
       - name: Check types and style
         run: npm run check
 
+      - name: Repair empty card navigation (build only)
+        run: node scripts/repair-navigation.mjs
+
       - name: Build Quartz
         run: npx quartz build -d content -v
 
