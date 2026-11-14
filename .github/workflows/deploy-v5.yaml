@@ -49,6 +49,9 @@ jobs:
       - name: Check types and style
         run: npm run check
 
+      - name: Restore links to moved excerpts (build only)
+        run: node scripts/repair-legacy-links.mjs
+
       - name: Build Quartz
         run: npx quartz build -d content -v
 
