@@ -3,7 +3,7 @@ on:
   push:
     branches: [v5]
     paths:
-      - scripts/audit-internal-links.mjs
+      - scripts/audit-links.mjs
       - .github/workflows/audit-links.yml
   workflow_dispatch:
 permissions:
@@ -14,4 +14,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Audit Quartz content links
-        run: node scripts/audit-internal-links.mjs
+        run: node scripts/audit-links.mjs
