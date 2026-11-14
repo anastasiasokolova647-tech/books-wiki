@@ -49,9 +49,6 @@ jobs:
       - name: Install Quartz plugins
         run: npx quartz plugin install
 
-      - name: Repair empty card navigation (build only)
-        run: node scripts/repair-navigation.mjs
-
       - name: Build Quartz
         run: npx quartz build
 
