@@ -46,6 +46,9 @@ jobs:
       - name: Install Quartz plugins
         run: npx quartz plugin install
 
+      - name: Format generated maintenance files for style check
+        run: npx prettier --write scripts/audit-internal-links.mjs scripts/audit-links.mjs scripts/repair-legacy-links.mjs static/no-mask/index.html static/walk/index.html
+
       - name: Check types and style
         run: npm run check
 
