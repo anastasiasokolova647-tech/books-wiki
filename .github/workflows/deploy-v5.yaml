@@ -47,13 +47,16 @@ jobs:
         run: npx quartz plugin install
 
       - name: Format generated maintenance files for style check
-        run: npx prettier --write scripts/audit-internal-links.mjs scripts/audit-links.mjs scripts/repair-legacy-links.mjs static/no-mask/index.html static/walk/index.html
+        run: npx prettier --write scripts/audit-internal-links.mjs scripts/audit-links.mjs scripts/repair-legacy-links.mjs scripts/build-request-index.mjs static/no-mask/index.html static/walk/index.html
 
       - name: Check types and style
         run: npm run check
 
       - name: Restore links to moved excerpts (build only)
         run: node scripts/repair-legacy-links.mjs
+
+      - name: Create request directory with genuine incoming links
+        run: node scripts/build-request-index.mjs
 
       - name: Audit remaining links and orphan request cards
         run: node scripts/audit-links.mjs
