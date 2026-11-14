@@ -52,6 +52,9 @@ jobs:
       - name: Restore links to moved excerpts (build only)
         run: node scripts/repair-legacy-links.mjs
 
+      - name: Audit remaining links and orphan request cards
+        run: node scripts/audit-links.mjs
+
       - name: Build Quartz
         run: npx quartz build -d content -v
 
