@@ -55,9 +55,6 @@ jobs:
       - name: Restore links to moved excerpts (build only)
         run: node scripts/repair-legacy-links.mjs
 
-      - name: Create request directory with genuine incoming links
-        run: node scripts/build-request-index.mjs
-
       - name: Audit remaining links and orphan request cards
         run: node scripts/audit-links.mjs
 
