@@ -18,3 +18,8 @@ title: Ліхтар
 ## ☕ Чай опівночі
 
 [[Книгарня|Повернутися до книгарні]]
+
+
+## 🛍️ Придбати «Ліхтар»
+
+[❤️ Замовити паперову книгу](https://docs.google.com/forms/d/e/1FAIpQLSfm9lxlmIioZkYh1s7AXKIb_OZnHzHJIEsogp6tHXPt0s39sA/viewform) Ціна 400 грн
