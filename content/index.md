@@ -10,18 +10,6 @@ article h1.article-title,
 .page-header .content-meta {
   display: none !important;
 }
-
-/* Ховаємо службові сторінки з бокових панелей */
-.left.sidebar li:has(a[href*="prezentatsiia"]),
-.left.sidebar li:has(a[href*="stabilizer"]),
-.left.sidebar li:has(a[href*="Книгарня"]),
-.left.sidebar li:has(a[href*="%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%D1%80%D0%BD%D1%8F"]),
-.right.sidebar li:has(a[href*="prezentatsiia"]),
-.right.sidebar li:has(a[href*="stabilizer"]),
-.right.sidebar li:has(a[href*="Книгарня"]),
-.right.sidebar li:has(a[href*="%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%D1%80%D0%BD%D1%8F"]) {
-  display: none !important;
-}
 </style>
 
 <section style="max-width:760px;text-align:left;margin:1rem 0 7rem;">
