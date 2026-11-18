@@ -10,6 +10,18 @@ article h1.article-title,
 .page-header .content-meta {
   display: none !important;
 }
+
+/* Ховаємо службові сторінки з бокових панелей */
+.left.sidebar li:has(a[href*="prezentatsiia"]),
+.left.sidebar li:has(a[href*="stabilizer"]),
+.left.sidebar li:has(a[href*="Книгарня"]),
+.left.sidebar li:has(a[href*="%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%D1%80%D0%BD%D1%8F"]),
+.right.sidebar li:has(a[href*="prezentatsiia"]),
+.right.sidebar li:has(a[href*="stabilizer"]),
+.right.sidebar li:has(a[href*="Книгарня"]),
+.right.sidebar li:has(a[href*="%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%D1%80%D0%BD%D1%8F"]) {
+  display: none !important;
+}
 </style>
 
 <section style="max-width:760px;text-align:left;margin:1rem 0 7rem;">
@@ -27,13 +39,28 @@ article h1.article-title,
   </p>
 
   <nav aria-label="Можливості Чаю опівночі" style="display:flex;gap:12px;flex-wrap:wrap;align-items:stretch;margin-top:1.5rem;">
-    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/static/no-mask/index.html" data-router-ignore data-no-popover style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">Кімната без маски</a>
+
+    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/static/no-mask/index.html" data-router-ignore data-no-popover style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">
+      Кімната без маски
+    </a>
+
     <button id="install-app" style="background:#ad7051;color:white;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;font-size:1rem;min-height:48px;cursor:pointer;">
       ☕ Встановити додаток
     </button>
-    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/prezentatsiia"  style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">▶ Про додаток</a>
-    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/static/walk/" data-router-ignore style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">🌿 Прогулянка до книжкової крамниці</a>
-    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/stabilizer/" data-router-ignore data-no-popover style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">Стабілізатор</a>
+
+    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/prezentatsiia" style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">
+      ▶ Про додаток
+    </a>
+
+    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/static/walk/" data-router-ignore style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">
+      🌿 Прогулянка до книжкової крамниці
+    </a>
+
+    <a href="https://anastasiasokolova647-tech.github.io/books-wiki/stabilizer/" data-router-ignore data-no-popover style="color:#e9b58e;text-decoration:none;border:1px solid #d49b77;border-radius:999px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;">
+      Стабілізатор
+    </a>
+
   </nav>
 
 </section>
+
