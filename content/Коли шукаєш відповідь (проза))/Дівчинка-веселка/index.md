@@ -1,13 +1,13 @@
 # Дівчинка-веселка - християнська повість-притча 
 
-**- Що робити, якщо побачив, як плаче тато? 
-- Як дитині зрозуміти сльози дорослого й залишитися поруч — у книзі «Дівчинка-веселка» Анастасії Соколової.**
+**Що робити, якщо побачив, як плаче тато?**
+
+Як дитині зрозуміти сльози дорослого й залишитися поруч — у книзі «Дівчинка-веселка» Анастасії Соколової.
 
 
 ![%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-19%20233919.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhDlCWpxMTFvvresZQJL7Vado-SAqWIWj-fjZRn9nXJJUrrlbOHlZlrVE5BUXtCFbZbygkKFzQjc5erMDOBejLGxmiPKGARQDtv1ptjM-kpuvPtrijU7I0UZgXoCagpRe2doI6pmEwUBhkAHipAABptvnB7x84NVnStjdZJ_tVawmpMx-DTFxa4z7CL95G/w493-h775/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-19%20233919.png)
 
-](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhDlCWpxMTFvvresZQJL7Vado-SAqWIWj-fjZRn9nXJJUrrlbOHlZlrVE5BUXtCFbZbygkKFzQjc5erMDOBejLGxmiPKGARQDtv1ptjM-kpuvPtrijU7I0UZgXoCagpRe2doI6pmEwUBhkAHipAABptvnB7x84NVnStjdZJ_tVawmpMx-DTFxa4z7CL95G/s695/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-19%20233919.png)
-**Замовити **«Дівчинка-веселка»**** **напряму** **можна [тут](https://docs.google.com/forms/d/e/1FAIpQLSfm9lxlmIioZkYh1s7AXKIb_OZnHzHJIEsogp6tHXPt0s39sA/viewform)**
+**Замовити «Дівчинку-веселку» напряму можна [тут](https://docs.google.com/forms/d/e/1FAIpQLSfm9lxlmIioZkYh1s7AXKIb_OZnHzHJIEsogp6tHXPt0s39sA/viewform)**
 
 **[Замовити паперову книгу в крамниці «Чай опівночі»](https://gain-placable-croquet.tilda.ws/)** 
 
@@ -18,5 +18,3 @@
 Це книга про дружбу, довіру, співчуття і надію. Про Бога, Який не приховує сліз. Про Ісуса, Який теж потребує підтримки. І про маленьку дівчинку, яка всім серцем вирішує бути поруч із Ними.
 
 Якщо вам близькі історії, після яких хочеться міцніше обійняти тих, кого любиш, можливо, ця книга теж знайде місце у вашому серці.
-
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhDlCWpxMTFvvresZQJL7Vado-SAqWIWj-fjZRn9nXJJUrrlbOHlZlrVE5BUXtCFbZbygkKFzQjc5erMDOBejLGxmiPKGARQDtv1ptjM-kpuvPtrijU7I0UZgXoCagpRe2doI6pmEwUBhkAHipAABptvnB7x84NVnStjdZJ_tVawmpMx-DTFxa4z7CL95G/w493-h775/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-19%20233919.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhDlCWpxMTFvvresZQJL7Vado-SAqWIWj-fjZRn9nXJJUrrlbOHlZlrVE5BUXtCFbZbygkKFzQjc5erMDOBejLGxmiPKGARQDtv1ptjM-kpuvPtrijU7I0UZgXoCagpRe2doI6pmEwUBhkAHipAABptvnB7x84NVnStjdZJ_tVawmpMx-DTFxa4z7CL95G/s695/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-19%20233919.png)
