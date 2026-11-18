@@ -1,5 +1,4 @@
 import TeaNavigation from "./quartz/components/TeaNavigation"
-import * as ExternalPlugin from "./.quartz/plugins"
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import { componentRegistry } from "./quartz/components/registry"
 import type { QuartzComponent } from "./quartz/components/types"
@@ -61,20 +60,6 @@ componentRegistry.register("PWARegistration", PWARegistration, "local")
 componentRegistry.register("ListeningSpace", ListeningSpace, "local")
 componentRegistry.register("FeedbackCards", FeedbackCards, "local")
 componentRegistry.register("TeaNavigation", TeaNavigation, "local")
-// Keep service pages accessible from homepage buttons, but out of the Explorer menu.
-ExternalPlugin.Explorer({
-  filterFn: (node) => {
-    const name = node.displayName.toLocaleLowerCase("uk-UA")
-    const hidden = new Set([
-      "книгарня",
-      "про додаток «чай опівночі»",
-      "стабілізатор",
-      "tags",
-    ])
-    return !hidden.has(name)
-  },
-})
-
 const config = await loadQuartzConfig()
 
 export default config
