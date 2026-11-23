@@ -4,3 +4,8 @@ node_modules
 
 content/**
 static/stabilizer/**
+
+# Self-contained published HTML experiences (generated bundles)
+quartz/static/reader-guide/index.html
+quartz/static/walk/index.html
+quartz/static/walk/tviy-ray-preview.html
