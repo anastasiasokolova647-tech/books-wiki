@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = "Stop"
 
-$Source = "C:\Users\Asus\OneDrive\Робочий стіл\Чай опівночі1"
+$Source = "C:\Users\Asus\Downloads\Chai_Obsidian"
 $Quartz = "C:\Users\Asus\quartz"
 $Dest = Join-Path $Quartz "content"
 
@@ -147,4 +147,5 @@ catch {
 }
 
 Read-Host "Press Enter to close"
+
 
