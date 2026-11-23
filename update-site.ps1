@@ -1,4 +1,4 @@
-﻿
+
 $ErrorActionPreference = "Stop"
 
 $Source = "C:\Users\Asus\Downloads\Chai_Obsidian"
@@ -57,7 +57,7 @@ try {
     Write-Host ""
     Write-Host "=== COPY OBSIDIAN ===" -ForegroundColor Cyan
 
-    robocopy $Source $Dest /E /XD ".obsidian" ".trash" /XF "desktop.ini" "index.md" /R:1 /W:1 /NP
+    robocopy $Source $Dest /E /XD ".obsidian" ".trash" /XF "desktop.ini" "index.md" "*.zip" /R:1 /W:1 /NP
 $RoboExitCode = $LASTEXITCODE
    if ($RoboExitCode -ge 8) {
         Stop-Safely "Obsidian copy failed"
