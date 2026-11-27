@@ -3,7 +3,7 @@
   "name": "Чай опівночі",
   "short_name": "Чай опівночі",
   "description": "Місце, де хочеться залишитись.",
-  "start_url": "/books-wiki/",
+  "start_url": "/books-wiki/static/welcome/?launch=1",
   "scope": "/books-wiki/",
   "display": "standalone",
   "background_color": "#161618",
