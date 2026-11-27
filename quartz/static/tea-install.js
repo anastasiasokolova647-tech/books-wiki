@@ -22,6 +22,12 @@
     )
   }
 
+  // Older installed apps may still launch the original root URL.
+  if (isStandalone() && location.pathname === "/books-wiki/" && !location.search) {
+    location.replace("/books-wiki/static/welcome/?launch=1")
+    return
+  }
+
   function ensureInstallUI() {
     if (!document.getElementById("tea-install-style")) {
       const style = document.createElement("style")
