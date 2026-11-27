@@ -30,7 +30,7 @@
           serif;
         color: #e9b58e;
       }
-      input {
+      input, select {
         width: 100%;
         padding: 14px;
         border: 1px solid #d49b77;
@@ -55,6 +55,8 @@
       p {
         margin: 8px 0;
       }
+      article { overflow-wrap: anywhere; }
+      select { margin-bottom: 16px; }
       #status {
         min-height: 2em;
       }
@@ -67,70 +69,40 @@
       <p>Знайди твори за біблійним віршем, словами цитати, назвою твору або книжки.</p>
       <label for="q">Що шукаємо?</label
       ><input id="q" type="search" placeholder="Наприклад: Івана 11:35, плачте, Ліхтар" />
+      <label for="book">Книжка</label><select id="book"><option value="">Усі книжки</option></select>
       <p id="status" role="status" aria-live="polite">Завантаження покажчика…</p>
       <div id="results"></div>
     </main>
-    <script>
-      const q = document.getElementById("q"),
-        results = document.getElementById("results"),
-        status = document.getElementById("status")
+    <script type="module">
+      import { matches } from './search.mjs'
+      const q = document.getElementById('q'), book = document.getElementById('book'), results = document.getElementById('results'), status = document.getElementById('status')
       let rows = []
-      const norm = (s) =>
-        String(s)
-          .normalize("NFKC")
-          .toLocaleLowerCase("uk")
-          .replace(/[’ʼ']/g, "")
-          .replace(/\s+/g, " ")
-          .trim()
       function render() {
-        const terms = norm(q.value).split(" ").filter(Boolean)
-        const found = rows.filter((r) => terms.every((t) => r.search.includes(t)))
+        const found = rows.filter(r => matches(r, q.value, book.value))
         results.replaceChildren()
-        status.textContent = "Знайдено творів: " + found.length + " із " + rows.length
+        status.textContent = `Знайдено творів: ${found.length} із ${rows.length}`
         for (const r of found) {
-          const a = document.createElement("article"),
-            link = document.createElement("a"),
-            meta = document.createElement("small"),
-            p = document.createElement("p")
-          link.href = new URL(
-            "../../" + r.slug.split("/").map(encodeURIComponent).join("/"),
-            location.href,
-          ).href
+          const card = document.createElement('article'), link = document.createElement('a'), meta = document.createElement('small'), p = document.createElement('p'), refs = document.createElement('p')
+          link.href = new URL('../../' + r.slug.split('/').map(encodeURIComponent).join('/'), location.href).href
           link.textContent = r.title
           meta.textContent = r.book
           p.textContent = r.epigraph
-          a.append(link, meta, p)
-          results.append(a)
+          for (const ref of r.references) {
+            const a = document.createElement('a')
+            a.href = ref.url; a.textContent = ref.label
+            refs.append(a, document.createTextNode(' · '))
+          }
+          card.append(link, meta, p, refs); results.append(card)
         }
       }
-      q.addEventListener("input", render)
-      fetch("../contentIndex.json")
-        .then((r) => {
-          if (!r.ok) throw Error("index")
-          return r.json()
-        })
-        .then((data) => {
-          for (const [slug, item] of Object.entries(data)) {
-            const content = String(item.content || "")
-            const match = content.match(/Біблійний епіграф\s*([\s\S]*?)(?=\s+Запит(?:\s|$)|$)/i)
-            if (!match) continue
-            const epigraph = match[1].trim()
-            const book = slug.split("/").slice(0, 2).join(" / ").replace(/-/g, " ")
-            const title = item.title || slug.split("/").pop()
-            rows.push({
-              slug,
-              title,
-              book,
-              epigraph,
-              search: norm(title + " " + book + " " + epigraph),
-            })
-          }
-          rows.sort((a, b) => a.title.localeCompare(b.title, "uk"))
-          render()
-        })
-        .catch(() => {
-          status.textContent = "Не вдалося завантажити покажчик. Оновіть сторінку трохи пізніше."
-        })
+      q.addEventListener('input', render); book.addEventListener('change', render)
+      fetch('./index.json', {cache:'no-cache'}).then(r => { if (!r.ok) throw Error('index'); return r.json() }).then(data => {
+        rows = data.works
+        for (const name of [...new Set(rows.map(r=>r.book))].sort((a,b)=>a.localeCompare(b,'uk'))) {
+          const o=document.createElement('option'); o.value=name; o.textContent=name; book.append(o)
+        }
+        render()
+      }).catch(()=>{status.textContent='Не вдалося завантажити покажчик. Оновіть сторінку трохи пізніше.'})
     </script>
   </body>
 </html>

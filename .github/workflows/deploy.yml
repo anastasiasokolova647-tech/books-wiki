@@ -58,6 +58,11 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
+      - name: Build and test Bible index
+        run: |
+          node scripts/build-bible-index.mjs
+          node --test tests/bible-index.test.mjs
+
       - name: Add Stabilizer
         run: |
           mkdir -p public/stabilizer
