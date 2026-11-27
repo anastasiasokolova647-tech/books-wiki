@@ -23,7 +23,12 @@
   }
 
   // Older installed apps may still launch the original root URL.
-  if (isStandalone() && location.pathname === "/books-wiki/" && !location.search) {
+  if (
+    isStandalone() &&
+    location.pathname === "/books-wiki/" &&
+    !location.search &&
+    !document.referrer.startsWith(location.origin + "/books-wiki/")
+  ) {
     location.replace("/books-wiki/static/welcome/?launch=1")
     return
   }
