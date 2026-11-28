@@ -5331,10 +5331,12 @@
     "title": "1. Біль",
     "identity": "Ліхтар/біль",
     "sha256": "307786602aad0a2b33a8088cff013013d9512af9f0e02e2d390f6695e9a3dd9e",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/10. Мої скарби.md",
@@ -5342,10 +5344,12 @@
     "title": "10. Мої скарби",
     "identity": "Ліхтар/мої скарби",
     "sha256": "99ae4034a8f4de41e708bd14fed24d18aa46c6b7ca160106db073172055a84fd",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/100. Монстр в коробці.md",
@@ -5353,10 +5357,12 @@
     "title": "100. Монстр в коробці",
     "identity": "Ліхтар/монстр в коробці",
     "sha256": "2503a8964b7929f4d96b4dcb47f0d5ac6690527fd582a8049c5c8f780bed8041",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/101. Мить, закарбована в серці.md",
@@ -5364,10 +5370,12 @@
     "title": "101. Мить, закарбована в серці",
     "identity": "Ліхтар/мить, закарбована в серці",
     "sha256": "6dcf3d2e050d47b19d07faff9620b60e68cb0ff85ec0ec17f45ac8793db6ed96",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/102. Любові мого життя з вірою у зустріч.md",
@@ -5375,10 +5383,12 @@
     "title": "102. Любові мого життя з вірою у зустріч",
     "identity": "Ліхтар/любові мого життя з вірою у зустріч",
     "sha256": "b2f995961a6f8416776ac73119ad8a35fa3f17adc7b00be42f37479765dd5025",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/103. Біжи.md",
@@ -5386,10 +5396,12 @@
     "title": "103. Біжи",
     "identity": "Ліхтар/біжи",
     "sha256": "62e66add44e1677a89a4f0c70ee02b73344896e157ca6ea9f96687cd96ce2759",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/104. До зустрічі.md",
@@ -5397,10 +5409,12 @@
     "title": "104. До зустрічі",
     "identity": "Ліхтар/до зустрічі",
     "sha256": "4598ef3c2f43e3df89a5253948a4f6cc4a016c342b8988a21df660950436a611",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/11. В обнімку.md",
@@ -5408,10 +5422,12 @@
     "title": "11. В обнімку",
     "identity": "Ліхтар/в обнімку",
     "sha256": "18a14ade41675793d030d1445543d6d79573cb82df90376212ef5b91c3884be0",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/12. Морська сіль.md",
@@ -5419,10 +5435,12 @@
     "title": "12. Морська сіль",
     "identity": "Ліхтар/морська сіль",
     "sha256": "ee72728f29ca3d3e2a44f23372a38132597bb069689e4f87dd0bda4b45afea7c",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/13. На долоні Бога.md",
@@ -5430,10 +5448,12 @@
     "title": "13. На долоні Бога",
     "identity": "Ліхтар/на долоні бога",
     "sha256": "0f59a5967ca3e1127fddc9e1405aec6f22d17cbf37f4b4f55cfac44bd70d6ae6",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/14. Лист самотнім друзям.md",
@@ -5441,10 +5461,12 @@
     "title": "14. Лист самотнім друзям",
     "identity": "Ліхтар/лист самотнім друзям",
     "sha256": "4f5ee20dc549e4d522623b253ff85456abc48fe2bbf5f8aa1fb34323d0a7d516",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/15. Обіймаю тебе ночами.md",
@@ -5452,10 +5474,12 @@
     "title": "15. Обіймаю тебе ночами",
     "identity": "Ліхтар/обіймаю тебе ночами",
     "sha256": "03e56b521d8c7f837540f7049d19064dcb3f01d34c6e3663841a2127d6b5d486",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/16. Ніжна любов.md",
@@ -5463,10 +5487,12 @@
     "title": "16. Ніжна любов",
     "identity": "Ліхтар/ніжна любов",
     "sha256": "5c018d382531245d1897d383e1bcf206e7c6293116d85dc7078058c369e5a797",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/17. Чарівниця.md",
@@ -5474,10 +5500,12 @@
     "title": "17. Чарівниця",
     "identity": "Ліхтар/чарівниця",
     "sha256": "a96c530668eafd853a58dd715a9792ad72d9d61a13ee577c31b1965ea8cfde9a",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/18. Я не хочу без Тебе, Тату.md",
@@ -5485,10 +5513,12 @@
     "title": "18. Я не хочу без Тебе, Тату",
     "identity": "Ліхтар/я не хочу без тебе, тату",
     "sha256": "d457eaa32b13de8491ccc5466d491e0dd856cf884e7fc70d0fa50df0b5591a03",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/19. Сили на любов.md",
@@ -5496,10 +5526,12 @@
     "title": "19. Сили на любов",
     "identity": "Ліхтар/сили на любов",
     "sha256": "ba587ccc31da31c83f160dba55de483d324fd44d3abb70e77cd317f3b08cb5e0",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/2. Голуб Ноя.md",
@@ -5507,10 +5539,12 @@
     "title": "2. Голуб Ноя",
     "identity": "Ліхтар/голуб ноя",
     "sha256": "54fc59104f29303b5b388907f58fc73c93eb5c839f0cb19f3b4c8d14cf97b0d7",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/20. Не дозволяй самотності зрости!.md",
@@ -5518,10 +5552,12 @@
     "title": "20. Не дозволяй самотності зрости!",
     "identity": "Ліхтар/не дозволяй самотності зрости!",
     "sha256": "ecfb97334d1551aaee48ee2d2f642c2d1fddc7f278be003604d010c8a1562346",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/21. Як усі (Присвячується людям з особливими потребами).md",
@@ -5529,10 +5565,12 @@
     "title": "21. Як усі (Присвячується людям з особливими потребами)",
     "identity": "Ліхтар/як усі (присвячується людям з особливими потребами)",
     "sha256": "a44efbf5d3f2f4f23297442d9a6f7691dfb2e8b1e67703e034bb6342e590d8e4",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/22. Ми пам’ятаємо Тебе.md",
@@ -5540,10 +5578,12 @@
     "title": "22. Ми пам’ятаємо Тебе",
     "identity": "Ліхтар/ми пам’ятаємо тебе",
     "sha256": "8c45e25c171b84cb432ecb4ae80770bfc365abf19999ff4463e9f354fecf6c56",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/23. Я візьму сама.md",
@@ -5551,10 +5591,12 @@
     "title": "23. Я візьму сама",
     "identity": "Ліхтар/я візьму сама",
     "sha256": "b374ec31e1ea25ac3a099b631b126a2040496098497a5d7d576b5ac2feb1c5c0",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/24. Не ображайте сильних людей.md",
@@ -5562,10 +5604,12 @@
     "title": "24. Не ображайте сильних людей",
     "identity": "Ліхтар/не ображайте сильних людей",
     "sha256": "b82b36923341c2c7b3148db2de53e78c2e2f49d1326920636471465a0cb31385",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/25. Я б не залишила Тебе ніколи (присвячено персонажам книги «Дівчинка-веселка»).md",
@@ -5573,10 +5617,12 @@
     "title": "25. Я б не залишила Тебе ніколи (присвячено персонажам книги «Дівчинка-веселка»)",
     "identity": "Ліхтар/я б не залишила тебе ніколи (присвячено персонажам книги «дівчинка-веселка»)",
     "sha256": "736b1fc85126dddafd67e4a3e7da07cec926c68fa54bc9e8e6f9bc0e924534e3",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/26. Мовчання.md",
@@ -5584,10 +5630,12 @@
     "title": "26. Мовчання",
     "identity": "Ліхтар/мовчання",
     "sha256": "b838dae7b1831428c446388877ffbe8c5591c50e2b265422c1ba6ba34fed8005",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/27. Люцику-ахламону.md",
@@ -5595,10 +5643,12 @@
     "title": "27. Люцику-ахламону",
     "identity": "Ліхтар/люцику-ахламону",
     "sha256": "3481ec2fcf8ca8156104fc80dad01cc7840d3746d5b59182f7f2efc744ed9264",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/28. Ти – оригінал себе.md",
@@ -5606,10 +5656,12 @@
     "title": "28. Ти – оригінал себе",
     "identity": "Ліхтар/ти – оригінал себе",
     "sha256": "8ab18de73783fbf339b2530e5546943f2eb42562df6d021df776a114669daf52",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/29. Перетвори біль на боротьбу.md",
@@ -5617,10 +5669,12 @@
     "title": "29. Перетвори біль на боротьбу",
     "identity": "Ліхтар/перетвори біль на боротьбу",
     "sha256": "d8c301e0085ea5fb55b85b77fab6529f914640c5b5b25f5eace23c51ace409ce",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/3. Скарб.md",
@@ -5628,10 +5682,12 @@
     "title": "3. Скарб",
     "identity": "Ліхтар/скарб",
     "sha256": "b73538421949f228e2d2206bbe6b4ed1cb07818385bbe56e785f5f4ea0e67e8f",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/30. Своя війна.md",
@@ -5639,10 +5695,12 @@
     "title": "30. Своя війна",
     "identity": "Ліхтар/своя війна",
     "sha256": "ff1174c20d163de1d289f2b308e2d306151093e5bad4a9fea585dd07ce788d18",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/31. Усім, хто віддав життя за когось.md",
@@ -5650,10 +5708,12 @@
     "title": "31. Усім, хто віддав життя за когось",
     "identity": "Ліхтар/усім, хто віддав життя за когось",
     "sha256": "730116b0359178559403004d9236ddeff03d6c859c429c7e6b2b6e86518f3edb",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/32. Тебе почути в тиші.md",
@@ -5661,10 +5721,12 @@
     "title": "32. Тебе почути в тиші",
     "identity": "Ліхтар/тебе почути в тиші",
     "sha256": "66802033d4adba1c0ecab93035d9c8d750d58fd5fdc39cec970ff77674e3cb7e",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/33. Що є важливим.md",
@@ -5672,10 +5734,12 @@
     "title": "33. Що є важливим",
     "identity": "Ліхтар/що є важливим",
     "sha256": "998fdb76d0a6e294d7b2386bea97e082aa86cbabe941f8c3d409b7ffb4ed9e0f",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/34. Осінь.md",
@@ -5683,10 +5747,12 @@
     "title": "34. Осінь",
     "identity": "Ліхтар/осінь",
     "sha256": "c61925d98a67c80d0e1df6237622691b3f4fabd948a9839aec85738bf9c5f6b8",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/35. Небесний затишок.md",
@@ -5694,10 +5760,12 @@
     "title": "35. Небесний затишок",
     "identity": "Ліхтар/небесний затишок",
     "sha256": "ed851018a32a584fc71e2f5f34b2ba6cdecd501ba5024c3b4f55d086bd18778b",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/36. Літній вечір.md",
@@ -5705,10 +5773,12 @@
     "title": "36. Літній вечір",
     "identity": "Ліхтар/літній вечір",
     "sha256": "302f7ba4447287418622a2d5d8ae223b7797b81dc2abb59c64bb6eb39b94fcee",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/37. Перша любов.md",
@@ -5716,10 +5786,12 @@
     "title": "37. Перша любов",
     "identity": "Ліхтар/перша любов",
     "sha256": "858d2cf219bf06b01203153d9cb37aeeabfc4364f0de69cf83dc22798e00a7aa",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/38. Біль на двох.md",
@@ -5727,10 +5799,12 @@
     "title": "38. Біль на двох",
     "identity": "Ліхтар/біль на двох",
     "sha256": "a54b32537db13a9cda39379fececa790a1c407bfdb787d424db2516a83471039",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/39. Діаманти.md",
@@ -5738,10 +5812,12 @@
     "title": "39. Діаманти",
     "identity": "Ліхтар/діаманти",
     "sha256": "71af848e898031781423aaf9f882605ff5ee6d5e32ae1e5491e725b1862b9d70",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/4 Сльози піднебесся.md",
@@ -5749,10 +5825,12 @@
     "title": "4 Сльози піднебесся",
     "identity": "Ліхтар/сльози піднебесся",
     "sha256": "e0e9f543d375f7687783ddfa496e6c38669c47b9e6a8f807c8201b1ea14895ee",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/40. Скельця мрій.md",
@@ -5760,10 +5838,12 @@
     "title": "40. Скельця мрій",
     "identity": "Ліхтар/скельця мрій",
     "sha256": "d2693ce82b7a28452c6cd581315ceb5d421597f1b799b073db50174b2a6cf63b",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/41. Обручка серця.md",
@@ -5771,10 +5851,12 @@
     "title": "41. Обручка серця",
     "identity": "Ліхтар/обручка серця",
     "sha256": "72e9ac3bcfe264961d99da2a93229f2c984a8b51d366c92ebc774ef6a47a02c3",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/42. Для чого стояти далі.md",
@@ -5782,10 +5864,12 @@
     "title": "42. Для чого стояти далі",
     "identity": "Ліхтар/для чого стояти далі",
     "sha256": "2c7de2021f15fe2c29218aae375736b92367b246455185dcf96337c6c9d738b8",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/43. Коли плачуть сильні.md",
@@ -5793,10 +5877,12 @@
     "title": "43. Коли плачуть сильні",
     "identity": "Ліхтар/коли плачуть сильні",
     "sha256": "58d25bd8cc0683e304a9ee57376cb2bdcb29c95107b4eac39ba3a037e27107dc",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/44. Осінній вечір.md",
@@ -5804,10 +5890,12 @@
     "title": "44. Осінній вечір",
     "identity": "Ліхтар/осінній вечір",
     "sha256": "7d6203219fde725e68e7711328d4ae93dc19546ae2e86bbeca9e863f250a7cc9",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/45. Прибульці.md",
@@ -5815,10 +5903,12 @@
     "title": "45. Прибульці",
     "identity": "Ліхтар/прибульці",
     "sha256": "63466c9e10567714553ee0293095c2f17596e8c6167479c3d40662e962a03504",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/46. Самітник.md",
@@ -5826,10 +5916,12 @@
     "title": "46. Самітник",
     "identity": "Ліхтар/самітник",
     "sha256": "763f65be7bb8ccf3697a2e6e6494cf0943c84a4472cf2c86f30538ba54db1040",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/47. Головне вміння.md",
@@ -5837,10 +5929,12 @@
     "title": "47. Головне вміння",
     "identity": "Ліхтар/головне вміння",
     "sha256": "d710d334633704403e9becd5639a2ff563b74bd3356568d37bc5f257a942598f",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/48. Не спіши.md",
@@ -5848,10 +5942,12 @@
     "title": "48. Не спіши",
     "identity": "Ліхтар/не спіши",
     "sha256": "94c5e764323c69fb20926ce83a15535b08b3996192ae967fe7e98c32145964eb",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/49. Запрошення в кафе.md",
@@ -5859,10 +5955,12 @@
     "title": "49. Запрошення в кафе",
     "identity": "Ліхтар/запрошення в кафе",
     "sha256": "a5076b67493d1ba6763c61984188b89388dc6992f0dc6dd5d05313088ce8d409",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/5. До зустрічі.md",
@@ -5870,10 +5968,12 @@
     "title": "5. До зустрічі",
     "identity": "Ліхтар/до зустрічі",
     "sha256": "18b19ca1408b00601488f2e1dcacc3b7a96b06c78c3b4ddaf1bc24767a063253",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/50. Свобода почуттів.md",
@@ -5881,10 +5981,12 @@
     "title": "50. Свобода почуттів",
     "identity": "Ліхтар/свобода почуттів",
     "sha256": "83642c7e6f3f7dbf6fa17f10a4d63ee0e3ad056d2fe63c6c9a722256f0a37fb1",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/51. Ти любов’ю нас зцілив.md",
@@ -5892,10 +5994,12 @@
     "title": "51. Ти любов’ю нас зцілив",
     "identity": "Ліхтар/ти любов’ю нас зцілив",
     "sha256": "e08c15ec5a8345144cd2b6cbfde73fc64e83780a050a63f722f814194f618c0e",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/52. Ідеал у рамці.md",
@@ -5903,10 +6007,12 @@
     "title": "52. Ідеал у рамці",
     "identity": "Ліхтар/ідеал у рамці",
     "sha256": "5fab9454caf785f6c0f69e49ac0e2f30944d41707f8d7ebbda0a032d374eb9f6",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/53. Морський прибій.md",
@@ -5914,10 +6020,12 @@
     "title": "53. Морський прибій",
     "identity": "Ліхтар/морський прибій",
     "sha256": "277e57f55ad030f9402da33dda2444b8f4a296ebcbdc8ec4cbf62aff2afe9311",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/54. Для тих, хто мріє донести свої думки.md",
@@ -5925,10 +6033,12 @@
     "title": "54. Для тих, хто мріє донести свої думки",
     "identity": "Ліхтар/для тих, хто мріє донести свої думки",
     "sha256": "3091398ad00e2f13fe35191085edec951bc4564c1300a557f773b2b4c683f5b1",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/55. Зупинись….md",
@@ -5936,10 +6046,12 @@
     "title": "55. Зупинись…",
     "identity": "Ліхтар/зупинись…",
     "sha256": "fd63f698e8a012cbc5147cc4cfb282e31e6e3f377996335ae0fd2d8f6412ca23",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/56. Мова любові.md",
@@ -5947,10 +6059,12 @@
     "title": "56. Мова любові",
     "identity": "Ліхтар/мова любові",
     "sha256": "7fb34212de4f64bd781238f2e72343bbab716c3b32ccdff0796a4cc23ace6f19",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/57. Самотнім і лагідним.md",
@@ -5958,10 +6072,12 @@
     "title": "57. Самотнім і лагідним",
     "identity": "Ліхтар/самотнім і лагідним",
     "sha256": "d6a0b58089f48803b54fdd1dae61d15189c332e490cba2f81f5fe3b2e5172519",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/58. Десь там тихенько плачуть почуття.md",
@@ -5969,10 +6085,12 @@
     "title": "58. Десь там тихенько плачуть почуття",
     "identity": "Ліхтар/десь там тихенько плачуть почуття",
     "sha256": "eaec646afbac5daf8f5b4fa627d29c20cb1e579fdd1c4f7554cefc3b659fbc02",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/59. Любіть.md",
@@ -5980,10 +6098,12 @@
     "title": "59. Любіть",
     "identity": "Ліхтар/любіть",
     "sha256": "797d63d6e3ad1bc84995c194bc3d9cd0f3a5ef225c71c0ba2300f7c666627661",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/6. Я не твій!.md",
@@ -5991,10 +6111,12 @@
     "title": "6. Я не твій!",
     "identity": "Ліхтар/я не твій!",
     "sha256": "e4a836f6d066cc2dddb543ba0491e87053912e6ad6565ad13900fbcde61dc1a2",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/60. Найкращий час.md",
@@ -6002,10 +6124,12 @@
     "title": "60. Найкращий час",
     "identity": "Ліхтар/найкращий час",
     "sha256": "1d7e4fd6fe5de5115817131d33f5e953d10ba36ee6ff54a7c915d98aa1a989db",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/61. Ти плачеш.md",
@@ -6013,10 +6137,12 @@
     "title": "61. Ти плачеш",
     "identity": "Ліхтар/ти плачеш",
     "sha256": "6ed5b5a02af703ab5e64dd1351449aa3d5c418831c3e6aedcaab46dec93facd6",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/62. Віра у зміни.md",
@@ -6024,10 +6150,12 @@
     "title": "62. Віра у зміни",
     "identity": "Ліхтар/віра у зміни",
     "sha256": "66e65be0f5533983cb2aa3371c41485d65a033812f4dd33e5eeec086ed6f7064",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/63. Хоч крапля сенсу.md",
@@ -6035,10 +6163,12 @@
     "title": "63. Хоч крапля сенсу",
     "identity": "Ліхтар/хоч крапля сенсу",
     "sha256": "e231aa2545a975c7a46aa5a4a0bf848b1ea0986ba29ad825dcf6dd001e686cc1",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/64. Щоб відчувати світ.md",
@@ -6046,10 +6176,12 @@
     "title": "64. Щоб відчувати світ",
     "identity": "Ліхтар/щоб відчувати світ",
     "sha256": "b0c607e3fab8cc09c92a4bb08a5e3303efb3361619530f9e92c87bf69c9c55d8",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/65. Любов кольору неба.md",
@@ -6057,10 +6189,12 @@
     "title": "65. Любов кольору неба",
     "identity": "Ліхтар/любов кольору неба",
     "sha256": "2d39e13104e7e6c10d9ef17abd6be4f21fa6a750472309c1f7569cfa194aed1c",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/66. Вільна.md",
@@ -6068,10 +6202,12 @@
     "title": "66. Вільна",
     "identity": "Ліхтар/вільна",
     "sha256": "84a643dced4f4fceb3900e9ae6fd07f335af2d2f0fccd65a0ee162d826675da6",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/67. Сенс.md",
@@ -6079,10 +6215,12 @@
     "title": "67. Сенс",
     "identity": "Ліхтар/сенс",
     "sha256": "a67523f2b1b7a6b86c2f032fd7af185cf0504ef6969ff8992ef2166958a367f2",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/68. Люби!.md",
@@ -6090,10 +6228,12 @@
     "title": "68. Люби!",
     "identity": "Ліхтар/люби!",
     "sha256": "67c77ecbad38a2907981393115e25ac57eb5632815f28dd7982566579225cd4e",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/69. Відповідальність.md",
@@ -6101,10 +6241,12 @@
     "title": "69. Відповідальність",
     "identity": "Ліхтар/відповідальність",
     "sha256": "c45ae13d13d175c73de9e3b619abc4c7cf0a4f215fc98251082024017099a0f3",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/7. Ми – шанс.md",
@@ -6112,10 +6254,12 @@
     "title": "7. Ми – шанс",
     "identity": "Ліхтар/ми – шанс",
     "sha256": "a935c03b3bb674f2ee29aed0d5cc697d8915aa23d17e7efd89dd031c7f9a6b20",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/70. Обирай!.md",
@@ -6123,10 +6267,12 @@
     "title": "70. Обирай!",
     "identity": "Ліхтар/обирай!",
     "sha256": "1c6f9c7f1c6ef10d370f60a1f584439a5f9c1ca34db759e545707464bb22c44d",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/71. Як часом ранять слова.md",
@@ -6134,10 +6280,12 @@
     "title": "71. Як часом ранять слова",
     "identity": "Ліхтар/як часом ранять слова",
     "sha256": "192d31a1de175ac41595bf258c52d07a72aa549e85a9d3c7fe75204b0c0260de",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/72. Ми йдемо до мети.md",
@@ -6145,10 +6293,12 @@
     "title": "72. Ми йдемо до мети",
     "identity": "Ліхтар/ми йдемо до мети",
     "sha256": "e5865c2aa411cbe39f47a17856787e0665ddc7e34f1f393a04041ad323e82acf",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/73. Закуток спокою.md",
@@ -6156,10 +6306,12 @@
     "title": "73. Закуток спокою",
     "identity": "Ліхтар/закуток спокою",
     "sha256": "346a49eb3335ea84696a97532ec1fce3cc11f8cd730389090c5664c9a60d66e5",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/74. Стежинка у скелях.md",
@@ -6167,10 +6319,12 @@
     "title": "74. Стежинка у скелях",
     "identity": "Ліхтар/стежинка у скелях",
     "sha256": "bc72b4d467da9ca6f09f01d9e55931eeee96f60acd2e222b16ad2947a95ef285",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/75. Ранкова маршрутка.md",
@@ -6178,10 +6332,12 @@
     "title": "75. Ранкова маршрутка",
     "identity": "Ліхтар/ранкова маршрутка",
     "sha256": "b6ffb6771ea4a447e64f704022e559706a9bc5c9edac29e6ab4163f33061edf7",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/76. Люби – єдина Всесвіту умова.md",
@@ -6189,10 +6345,12 @@
     "title": "76. Люби – єдина Всесвіту умова",
     "identity": "Ліхтар/люби – єдина всесвіту умова",
     "sha256": "30634da496415fc8c71ea473de1ea3b7244601517354682d6340e7d93c6344ec",
-    "status": "Не перевірено",
+    "status": "Потрібен повний текст",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": false,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/77. Я розумію.md",
@@ -6200,10 +6358,12 @@
     "title": "77. Я розумію",
     "identity": "Ліхтар/я розумію",
     "sha256": "9a89c3d1e7f1351c580fe13535403ca0a58f71f92955c6b5855181170c92552c",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/78 Ти завжди за спиною.md",
@@ -6211,10 +6371,12 @@
     "title": "78 Ти завжди за спиною",
     "identity": "Ліхтар/ти завжди за спиною",
     "sha256": "fdef6eb1610767b3fc254b66e7405aa6563e6b094ade80b9381f9210aaa277e7",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/79. Наосліп до вершини.md",
@@ -6222,10 +6384,12 @@
     "title": "79. Наосліп до вершини",
     "identity": "Ліхтар/наосліп до вершини",
     "sha256": "86a0609c94c35b92b7cf0a38c6b8abde0889099d8b2019f668611a5da557b329",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/8. Фенікс.md",
@@ -6233,10 +6397,12 @@
     "title": "8. Фенікс",
     "identity": "Ліхтар/фенікс",
     "sha256": "4f8f8fa4afd65a68307dbfdc06988d1cbde40dd2be1a4662918227ac438894df",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/80. Спогад про неприйняту любов.md",
@@ -6244,10 +6410,12 @@
     "title": "80. Спогад про неприйняту любов",
     "identity": "Ліхтар/спогад про неприйняту любов",
     "sha256": "2192b94aad9954b5d4dac4f3f15d6127fa48d5a6e275145d8e6c502c7f75d7d5",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/81. Не можна не любити.md",
@@ -6255,10 +6423,12 @@
     "title": "81. Не можна не любити",
     "identity": "Ліхтар/не можна не любити",
     "sha256": "057cb68e3c27a2bff660debf0e9f8a6d3257b0c81b90a5b8d49cc5ea18fb252f",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/82. Страх помер на хресті.md",
@@ -6266,10 +6436,12 @@
     "title": "82. Страх помер на хресті",
     "identity": "Ліхтар/страх помер на хресті",
     "sha256": "ce2f0a06df691197eb8e3d8da69ecbaab3901464012d5f997b55b6451d872ed3",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/83. А як же Ти.md",
@@ -6277,10 +6449,12 @@
     "title": "83. А як же Ти",
     "identity": "Ліхтар/а як же ти",
     "sha256": "0002b25ffa6722d3c4bd19e6a9421dbcafa23dd49e4d9d141cfab353e1528ca1",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/84. Позначений Місяцем.md",
@@ -6288,10 +6462,12 @@
     "title": "84. Позначений Місяцем",
     "identity": "Ліхтар/позначений місяцем",
     "sha256": "bf718d7544400e438745984008e1dd4c0ddf0321c362c0c4320037ef6821eadb",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/85. Засну на колінах Бога.md",
@@ -6299,10 +6475,12 @@
     "title": "85. Засну на колінах Бога",
     "identity": "Ліхтар/засну на колінах бога",
     "sha256": "190e4ee036e01f3b7ed5f243613cb39e82a27da93838cb8f87021dfd0a81b180",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/86. Марафон із часом.md",
@@ -6310,10 +6488,12 @@
     "title": "86. Марафон із часом",
     "identity": "Ліхтар/марафон із часом",
     "sha256": "8dd232dd7ae826f770c2d15fec7303d1f95c1b9d4b69a6c8bcc1e594916adfcb",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/87. Поплач, я тут.md",
@@ -6321,10 +6501,12 @@
     "title": "87. Поплач, я тут",
     "identity": "Ліхтар/поплач, я тут",
     "sha256": "a78ba7963b4f7737eda4b8cb2e4061a494812f4c1f1e4dee5e37933e544865d3",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/88. Твоє життя.md",
@@ -6332,10 +6514,12 @@
     "title": "88. Твоє життя",
     "identity": "Ліхтар/твоє життя",
     "sha256": "28fcb2bf2fcfc63ec69d7a35b4f4def458978fa017f4d64acd356e105020c9bf",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/89. Cповідь.md",
@@ -6343,10 +6527,12 @@
     "title": "89. Cповідь",
     "identity": "Ліхтар/cповідь",
     "sha256": "6f51f564264c73edd1f464ae561290d4b342018f758881af61984c68f1cb0a66",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/9. Ліхтар.md",
@@ -6354,10 +6540,12 @@
     "title": "9. Ліхтар",
     "identity": "Ліхтар/ліхтар",
     "sha256": "b0d48d2abc5b790d0683c17f2e62eb971040ad1a909dea4966711d6d672d8588",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/90. Нікому ти нічого не повинен.md",
@@ -6365,10 +6553,12 @@
     "title": "90. Нікому ти нічого не повинен",
     "identity": "Ліхтар/нікому ти нічого не повинен",
     "sha256": "24c26e52973f8d5bafc466f94bd0bc80d607cdd3055b58ad0be4b78245490b4d",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/91. Проблеми в голові.md",
@@ -6376,10 +6566,12 @@
     "title": "91. Проблеми в голові",
     "identity": "Ліхтар/проблеми в голові",
     "sha256": "d528d0c23a612c3b0a5d55d4e41e2bf5fdbbe2bfdf522c3428adebc6874d4529",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/92. Мій народ.md",
@@ -6387,10 +6579,12 @@
     "title": "92. Мій народ",
     "identity": "Ліхтар/мій народ",
     "sha256": "0f147e4c5e5b464c81762765942eb70842351cd6dae4c263933452760fde53bc",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/93. Наш урок.md",
@@ -6398,10 +6592,12 @@
     "title": "93. Наш урок",
     "identity": "Ліхтар/наш урок",
     "sha256": "77d3d99cea1cf88215b4610ce703a0af8c431750d1f9e54c75662eb489ff181c",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/94. Хочу, щоб ти знав.md",
@@ -6409,10 +6605,12 @@
     "title": "94. Хочу, щоб ти знав",
     "identity": "Ліхтар/хочу, щоб ти знав",
     "sha256": "9f9bec730551affc01816b845c9a317eee6426a89a0e838160762eef8d7af88a",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/95. Мій.md",
@@ -6420,10 +6618,12 @@
     "title": "95. Мій",
     "identity": "Ліхтар/мій",
     "sha256": "7334b4a222dea8e5ea2f0db54468b0a29925b499928f2c11908afd98c7129ae0",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/96. Зцілити рани Брата.md",
@@ -6431,10 +6631,12 @@
     "title": "96. Зцілити рани Брата",
     "identity": "Ліхтар/зцілити рани брата",
     "sha256": "33f299491b4cb4ae6136f8ff5f7e5c4d6caa5b7a4118f6042d71175e2e393d0f",
-    "status": "Не перевірено",
+    "status": "Епіграфи додано",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/97. Побажання на новий рік.md",
@@ -6442,10 +6644,12 @@
     "title": "97. Побажання на новий рік",
     "identity": "Ліхтар/побажання на новий рік",
     "sha256": "868ce4f3da05572d1f32ec79b9db2dfaece3c44df91a8bcb906e774473d07c5b",
-    "status": "Не перевірено",
+    "status": "Потрібен повний текст",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": false,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/98. Я не знаю.md",
@@ -6453,10 +6657,12 @@
     "title": "98. Я не знаю",
     "identity": "Ліхтар/я не знаю",
     "sha256": "76d251c18b2d54d44e459d885a294dc4972ae5b5a742d4a007f2d2a6d4cba925",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/0 Уривок/99. Почуття.md",
@@ -6464,10 +6670,12 @@
     "title": "99. Почуття",
     "identity": "Ліхтар/почуття",
     "sha256": "ee9f49cd90d2385bc037766d8f11795eecf69d9a2e64f222195988e092fb8757",
-    "status": "Не перевірено",
+    "status": "Перевірено, паралелей не знайдено",
     "hasTextSection": false,
     "hasEpigraph": false,
-    "siteVerified": false
+    "siteVerified": false,
+    "readFullText": true,
+    "review": "batch-05.json"
   },
   {
     "path": "content/Поезія присутності/Ліхтар/index.md",
